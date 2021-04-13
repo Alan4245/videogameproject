@@ -1,0 +1,6 @@
+Diego -> Arma
+Alan -> Negozio
+Tonelli -> Videogioco
+Zani -> Personaggio
+Napolitano -> Combattimento
+Endi -> Categoria, Razza
