@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Esercizio_Videogioco
 {
@@ -34,7 +35,8 @@ namespace Esercizio_Videogioco
                 Armi = new List<Arma>();
                 Exp = 0;
                 Monete = 0;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -155,9 +157,9 @@ namespace Esercizio_Videogioco
 
         public void AggiungiArma(Arma a)
         {
-            foreach(Arma b in Armi)
+            foreach (Arma b in Armi)
             {
-                if(b.ID == a.ID)
+                if (b.GetID() == a.GetID())
                 {
                     throw new Exception("Arma già aggiunta");
                 }
@@ -169,7 +171,7 @@ namespace Esercizio_Videogioco
         {
             foreach (Arma b in Armi)
             {
-                if (b.ID == a.ID)
+                if (b.GetID() == a.GetID())
                 {
                     Armi.Remove(a);
                     return;
