@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +6,17 @@ using System.Xml.Serialization;
 
 namespace Esercizio_Videogioco
 {
-    public class Razza:IEquatable<Razza>
+    [XmlRoot(ElementName = "Razza")]
+    public class Razza : IEquatable<Razza>
     {
         private string _nome;
         private List<Categoria> _categorieArmi;
         private string _id;
+        private double _lp;
 
         public Razza()
         {
-            
+
         }
 
         public Razza(string id, string nome, List<Categoria> cat)
@@ -24,11 +26,13 @@ namespace Esercizio_Videogioco
                 ID = id;
                 Nome = nome;
                 CategorieArmi = cat;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
         }
+        [XmlElement(ElementName = "CategorieArmi")]
 
         public List<Categoria> CategorieArmi
         {
@@ -41,7 +45,7 @@ namespace Esercizio_Videogioco
                 _categorieArmi = value;
             }
         }
-
+        [XmlAttribute(AttributeName = "ID")]
         public string ID
         {
             get
@@ -55,7 +59,7 @@ namespace Esercizio_Videogioco
                 _id = value;
             }
         }
-
+        [XmlElement(ElementName = "Nome")]
         public string Nome
         {
             get
@@ -67,6 +71,20 @@ namespace Esercizio_Videogioco
                 if (String.IsNullOrEmpty(value))
                     throw new Exception("Nome razza non valido");
                 _nome = value;
+            }
+        }
+
+        public double LifePoints
+        {
+            get
+            {
+                return _lp;
+            }
+            set
+            {
+                if (value <= 0)
+                    throw new Exception("Life point troppo bassi");
+                _lp = value;
             }
         }
 
