@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Esercizio_Videogioco
 {
-    public class Combattimento
+    public class Combattimentoclass
     {
         private Personaggio _personaggio1;
         private Personaggio _personaggio2;
@@ -13,7 +13,7 @@ namespace Esercizio_Videogioco
         private Arma _arma1;
         private Arma _arma2;
 
-        public Combattimento(ref Personaggio p1, ref Personaggio p2, Arma a1, Arma a2)
+        public Combattimentoclass(ref Personaggio p1, ref Personaggio p2, Arma a1, Arma a2)
         {
             try
             {
@@ -21,7 +21,8 @@ namespace Esercizio_Videogioco
                 Personaggio2 = p2;
                 Arma1 = a1;
                 Arma2 = a2;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -95,10 +96,10 @@ namespace Esercizio_Videogioco
         {
             double d1 = Arma1.PuntiDanno;
             double d2 = Arma2.PuntiDanno;
-            double p1 = Personaggio1.PuntiVita;
-            double p2 = Personaggio2.PuntiVita;
+            double p1 = Personaggio1.Razza.LifePoints;
+            double p2 = Personaggio2.Razza.LifePoints;
 
-            while(p1 <=0 || p2 <= 0)
+            while (p1 <= 0 || p2 <= 0)
             {
                 p1 -= d2;
                 p2 -= d1;
@@ -115,13 +116,13 @@ namespace Esercizio_Videogioco
         public int AssegnaExp()
         {
             int xp = 0;
-            if(Vincitore == Personaggio1)
+            if (Vincitore == Personaggio1)
             {
-                xp = (int)(10 + (Personaggio2.PuntiVita - Arma1.PuntiDanno));
+                xp = (int)(10 + (Personaggio2.Razza.LifePoints - Arma1.PuntiDanno));
             }
             else
             {
-                xp = (int)(10 + (Personaggio1.PuntiVita - Arma2.PuntiDanno));
+                xp = (int)(10 + (Personaggio1.Razza.LifePoints - Arma2.PuntiDanno));
             }
             return xp;
         }
