@@ -1,0 +1,16 @@
+﻿<Window x:Class="Esercizio_Videogioco.menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Esercizio_Videogioco"
+        mc:Ignorable="d"
+        Title="menu" Height="450" Width="800">
+    <Grid>
+        <Image Source="417839.jpg" Stretch="Fill"/>
+        <Button x:Name="Btn_Gioca" Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,48,0,0" FontSize="24" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Button x:Name="Btn_Negozio" Content="Negozio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,122,0,0" FontSize="24" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Button x:Name="Btn_CreaPersonaggio" Content="Crea Personaggio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,345,0,0" FontSize="22" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Esercizio_Videogioco.Personaggio">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgCIAAAQABBAAQAQAgAAAACQABAAgAgAAAAgAEBQAA=</HashCode>
+      <FileName>Personaggio.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_razza" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_armi" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Esercizio_Videogioco.Arma">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAZAAEAAAgQADAgAAAQABAAAAAAAAAIEEAAAA=</HashCode>
+      <FileName>Arma.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_categoria" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Esercizio_Videogioco.Razza">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAgAAAAABAAAAAAAAAAAAAQAAAAAEAAAA=</HashCode>
+      <FileName>Razza.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_categorieArmi" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Esercizio_Videogioco.Categoria">
+    <Position X="7" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAgAAAAABAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Esercizio_Videogioco.Videogioco">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <AssociationLine Name="_personaggi" Type="Esercizio_Videogioco.Personaggio" ManuallyRouted="true">
+      <Path>
+        <Point X="1.25" Y="5.67" />
+        <Point X="2.008" Y="5.67" />
+        <Point X="2.008" Y="5.275" />
+        <Point X="4.917" Y="5.275" Type="JumpStart" />
+        <Point X="5.083" Y="5.275" Type="JumpEnd" />
+        <Point X="6.667" Y="5.275" Type="JumpStart" />
+        <Point X="6.833" Y="5.275" Type="JumpEnd" />
+        <Point X="7" Y="5.275" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAIEQEAgAAkAAgACAAMAAAAAAAAAgAEBAIA=</HashCode>
+      <FileName>Videogioco.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_razze" />
+      <Field Name="_personaggi" />
+      <Field Name="_armi" />
+      <Field Name="_categorie" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Esercizio_Videogioco.Negozio">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAIAAACEAAAAAgAAAAAAAEQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Negozio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Esercizio_Videogioco.Combattimento">
+    <Position X="11.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAABAAAABAAgQAAAAAAAAAAAEAAAgAAwA=</HashCode>
+      <FileName>Combattimento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_personaggio1" />
+      <Field Name="_personaggio2" />
+      <Field Name="_arma1" />
+      <Field Name="_arma2" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
