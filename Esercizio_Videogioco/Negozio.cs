@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Esercizio_Videogioco
 {
-    public class Negozio
+    public class Negozioclass
     {
 
         public void AggiungiArmaPersonaggio()

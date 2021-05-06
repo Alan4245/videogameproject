@@ -6,6 +6,7 @@ using System.Xml.Serialization;
 
 namespace Esercizio_Videogioco
 {
+    [XmlRoot(ElementName = "Categoria")]
     public class Categoria : IEquatable<Categoria>
     {
         private string _id;
@@ -28,7 +29,7 @@ namespace Esercizio_Videogioco
                 throw ex;
             }
         }
-
+        [XmlAttribute(AttributeName = "ID")]
         public string ID
         {
             get
@@ -42,7 +43,7 @@ namespace Esercizio_Videogioco
                 _id = value;
             }
         }
-
+        [XmlElement(ElementName = "Nome")]
         public string Nome
         {
             get

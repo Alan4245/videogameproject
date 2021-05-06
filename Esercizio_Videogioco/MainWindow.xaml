@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <MediaElement x:Name="Gif" HorizontalAlignment="Left" Height="648" VerticalAlignment="Top" Width="1007" Source="tenor.gif" Margin="-96,0,-119,-229"/>
-        <Button x:Name="Btn_Inizio_Copy" Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="313,253,0,0" FontSize="24" Background="#FF0B7781" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Button x:Name="Btn_Inizio_Copy" Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="313,253,0,0" FontSize="24" Background="#FF0B7781" FontWeight="Bold" FontFamily="Comic Sans MS" Click="Btn_Inizio_Copy_Click"/>
         <Label Content="Nome Gioco" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFFD100" FontSize="24" FontFamily="Comic Sans MS" FontWeight="Bold"/>
         <Label Content="ALESSANDRO DIEGO&#xD;&#xA;ALAN MARIANI&#xD;&#xA;ENDI DYRMYSHI&#xD;&#xA;CRISTOFER NAPOLITANO&#xD;&#xA;FRANCESCO TONELLI&#xD;&#xA;FILIPPO ZANI" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFFD100" Margin="567,0,0,0" Height="161" Width="225" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="16"/>
     </Grid>

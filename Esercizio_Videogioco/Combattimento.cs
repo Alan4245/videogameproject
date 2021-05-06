@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Esercizio_Videogioco
 {
-    public class Combattimento
+    public class Combattimentoclass
     {
         private Personaggio _personaggio1;
         private Personaggio _personaggio2;
@@ -13,7 +13,7 @@ namespace Esercizio_Videogioco
         private Arma _arma1;
         private Arma _arma2;
 
-        public Combattimento(ref Personaggio p1, ref Personaggio p2, Arma a1, Arma a2)
+        public Combattimentoclass(ref Personaggio p1, ref Personaggio p2, Arma a1, Arma a2)
         {
             try
             {

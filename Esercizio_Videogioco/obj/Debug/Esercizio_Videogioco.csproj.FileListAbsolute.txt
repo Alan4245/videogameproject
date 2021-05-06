@@ -19,3 +19,30 @@ C:\Users\Alessandro\Desktop\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\
 C:\Users\Alessandro\Desktop\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\CreaPersonaggio.baml
 C:\Users\Alessandro\Desktop\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Gioca.baml
 C:\Users\Alessandro\Desktop\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\menu.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.csprojAssemblyReference.cache
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Combattimento.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\CreaPersonaggio.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Gioca.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\MainWindow.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\menu.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Negozio.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Window1.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\App.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco_MarkupCompile.cache
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco_MarkupCompile.lref
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.exe
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.pdb
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\bin\Debug\Esercizio_Videogioco.exe.config
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\bin\Debug\Esercizio_Videogioco.exe
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\bin\Debug\Esercizio_Videogioco.pdb
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Combattimento.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\CreaPersonaggio.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Gioca.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\MainWindow.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\menu.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Negozio.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Window1.baml
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.g.resources
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.Properties.Resources.resources
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.csproj.GenerateResource.cache
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.csproj.CoreCompileInputs.cache

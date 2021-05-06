@@ -27,5 +27,12 @@ namespace Esercizio_Videogioco
         {
             InitializeComponent();
         }
+
+        private void Btn_Inizio_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            menu nuovoMenu = new menu();
+            nuovoMenu.Show();
+            this.Close();
+        }
     }
 }
