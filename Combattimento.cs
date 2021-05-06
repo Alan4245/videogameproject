@@ -1,19 +1,24 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Esercizio_Videogioco
 {
-    public class Combattimentoclass
+    public class Combattimento
     {
         private Personaggio _personaggio1;
         private Personaggio _personaggio2;
-        private Personaggio _vincitore;
         private Arma _arma1;
         private Arma _arma2;
+        private double _puntiVita1, _puntiVita2;
+        Random rnd; // utilizzato per rigenerazione salute
 
-        public Combattimentoclass(ref Personaggio p1, ref Personaggio p2, Arma a1, Arma a2)
+        private Personaggio _vincitore;
+        private int _turno;
+
+
+        public Combattimento(Personaggio p1,Personaggio p2, Arma a1,Arma a2)
         {
             try
             {
@@ -21,11 +26,17 @@ namespace Esercizio_Videogioco
                 Personaggio2 = p2;
                 Arma1 = a1;
                 Arma2 = a2;
+
+                Vincitore = null;
+                PuntiVita1 = Personaggio1.PuntiVita;
+                PuntiVita2 = Personaggio2.PuntiVita;
+                rnd = new Random();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw ex;
             }
+            
         }
 
         public Personaggio Personaggio1
@@ -34,11 +45,16 @@ namespace Esercizio_Videogioco
             {
                 return _personaggio1;
             }
-            set
+            private set
             {
-                if (value == Personaggio2)
-                    throw new Exception("I due personaggi non possono essere uguali");
-                _personaggio1 = value;
+                try
+                {
+                    Personaggio1 = value;
+                }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
             }
         }
 
@@ -48,70 +64,191 @@ namespace Esercizio_Videogioco
             {
                 return _personaggio2;
             }
-            set
+            private set
             {
-                if (value == Personaggio1)
-                    throw new Exception("I due personaggi non possono essere uguali");
-                _personaggio2 = value;
+                try
+                {
+                    Personaggio2 = value;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
         }
-
-        private Personaggio Vincitore
-        {
-            get
-            {
-                return _vincitore;
-            }
-            set
-            {
-                _vincitore = value;
-            }
-        }
-
+        //verifica del set per controllare legittimità del possesso dell'arma del personaggio1
         public Arma Arma1
         {
             get
             {
                 return _arma1;
             }
-            set
+            private set
             {
-                _arma1 = value;
+                try
+                {
+                    Arma1 = value;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
         }
-
+        //verifica del set per controllare legittimità del possesso dell'arma del personaggio2
         public Arma Arma2
         {
             get
             {
                 return _arma2;
             }
+            private set
+            {
+                try
+                {
+                    Arma2 = value;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+        public Personaggio Vincitore
+        {
+            get
+            {
+                return _vincitore;
+            }
+            private set
+            {
+                try
+                {
+                    if (value != Personaggio1 || value != Personaggio2)
+                        throw new Exception("personaggio non esistente nel combattimento");
+                    _vincitore = value;
+                }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+        public int Turno
+        {
+            get
+            {
+                return _turno;
+            }
+            private set
+            {
+                try
+                {
+                    if (value != 0 || value != 1)
+                        throw new Exception("numero turno non valido");
+                    _turno = value;
+                }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+        public double PuntiVita1
+        {
+            get
+            {
+                return _puntiVita1;
+            }
             set
             {
-                _arma2 = value;
+                try
+                {
+                    _puntiVita1 = value;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
         }
-
-        public void AssegnaVittoria()
+        public double PuntiVita2
         {
-            double d1 = Arma1.PuntiDanno;
-            double d2 = Arma2.PuntiDanno;
-            double p1 = Personaggio1.Razza.LifePoints;
-            double p2 = Personaggio2.Razza.LifePoints;
-
-            while (p1 <= 0 || p2 <= 0)
+            get
             {
-                p1 -= d2;
-                p2 -= d1;
+                return _puntiVita2;
+            }
+            set
+            {
+                try
+                {
+                    _puntiVita2 = value;
+                }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+
+
+        //metodi del combattimento
+        //è stata presa la decisione di far gestire alla classe chi dovesse fare la mossa e di fare il cambio del turno dopo
+        public void Attacca()
+        {
+            if (Turno == 0)
+            {
+                PuntiVita2 -= Arma1.PuntiDanno;
+            }
+            else if (Turno == 1)
+            {
+                PuntiVita1 -= Arma2.PuntiDanno;
             }
 
-            if (p1 < p2)
-                Vincitore = Personaggio2;
-            else if (p1 > p2)
-                Vincitore = Personaggio1;
-            else if (p1 == p2)
-                throw new Exception("Pareggio");
+            Cambioturno();
         }
+
+        public void RigeneraSalute()
+        {
+            int percentualeSaluteGuadagnata = rnd.Next(5, 18);//percentuale di salute guadagnata compresa tra 5% e 17% 
+            double puntiVitaT;
+            if (Turno == 0)
+            {
+                puntiVitaT = Personaggio1.PuntiVita;
+                puntiVitaT = (double)(puntiVitaT / 100) * percentualeSaluteGuadagnata;
+                PuntiVita1 += puntiVitaT;
+            }
+            else if (Turno == 1)
+            {
+                puntiVitaT = Personaggio2.PuntiVita;
+                puntiVitaT = (double)(puntiVitaT / 100) * percentualeSaluteGuadagnata;
+                PuntiVita1 += puntiVitaT;
+            }
+            Cambioturno();
+        }
+
+        //da definire
+        public void AttivaAbilitàSpeciale()
+        {
+            throw new System.NotImplementedException();
+            //Cambioturno();
+        }
+        
+        //gestione turno della grafica
+        public void Cambioturno()
+        {
+            if (Turno == 0)
+                Turno = 1;
+            else if (Turno == 1)
+                Turno = 0;
+        }
+
+        //gestione vantaggi e svantaggi
+
 
         public int AssegnaExp()
         {
@@ -130,6 +267,32 @@ namespace Esercizio_Videogioco
         public int AssegnaDenaro()
         {
             return 10;
+        }
+
+        public bool VerificaFinePartita()
+        {
+            if (Personaggio1.PuntiVita <= 0)
+            {
+                Vincitore = Personaggio1;
+                return true;
+            } 
+            else if (Personaggio2.PuntiVita <= 0)
+            {
+                Vincitore = Personaggio2;
+                return true;
+            }
+            return false;
+                
+        }
+        //in teoria non ci serve, metodo già implementato
+        public void AssegnaVittoria(out Personaggio vincitore)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void TerminaPartita()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
