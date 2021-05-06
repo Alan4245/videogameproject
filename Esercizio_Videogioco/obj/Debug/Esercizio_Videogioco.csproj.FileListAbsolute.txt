@@ -47,3 +47,4 @@ C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Eser
 C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.csproj.GenerateResource.cache
 C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\Esercizio_Videogioco.csproj.CoreCompileInputs.cache
 C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\AggiungiElementi.g.cs
+C:\Users\alanm\Documents\GitHubProgetti\Es. Videogioco\Esercizio_Videogioco\Esercizio_Videogioco\obj\Debug\AggiungiElementi.baml

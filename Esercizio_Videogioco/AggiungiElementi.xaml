@@ -14,10 +14,11 @@
         <Label Content="Razza" HorizontalAlignment="Left" Height="25" Margin="200,25,0,0" VerticalAlignment="Top" Width="65"/>
         <TextBox x:Name="inputRazzaID" HorizontalAlignment="Left" Height="35" Margin="165,70,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="inputRazzaNOME" HorizontalAlignment="Left" Height="35" Margin="165,115,0,0" TextWrapping="Wrap" Text="NOME" VerticalAlignment="Top" Width="110"/>
-        <Button x:Name="btnRazza" Content="ADD" HorizontalAlignment="Left" Height="35" Margin="165,165,0,0" VerticalAlignment="Top" Width="110" Click="btnCategoria_Click"/>
+        <Button x:Name="btnRazza" Content="ADD" HorizontalAlignment="Left" Height="35" Margin="165,165,0,0" VerticalAlignment="Top" Width="110" Click="btnRazza_Click"/>
         <Label Content="Arma" HorizontalAlignment="Left" Height="25" Margin="400,25,0,0" VerticalAlignment="Top" Width="65"/>
         <TextBox x:Name="inputArmaDESCRIZIONE" HorizontalAlignment="Left" Height="35" Margin="360,65,0,0" TextWrapping="Wrap" Text="Descrizione" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="inputArmaNOME" HorizontalAlignment="Left" Height="35" Margin="360,115,0,0" TextWrapping="Wrap" Text="NOME" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="btnPanic" Content="CONFERMA SOS" HorizontalAlignment="Left" Height="60" Margin="540,340,0,0" VerticalAlignment="Top" Width="230" Click="btnPanic_Click"/>
 
     </Grid>
 </Window>

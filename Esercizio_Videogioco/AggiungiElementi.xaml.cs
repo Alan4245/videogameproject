@@ -35,5 +35,25 @@ namespace Esercizio_Videogioco
             videogiocolocale.AggiungiCategoria(nuovaCat);
 
         }
+
+        private void btnRazza_Click(object sender, RoutedEventArgs e)
+        {
+            string id = inputRazzaID.Text;
+            string nome = inputRazzaNOME.Text;
+            List<Categoria> categorieRazza = new List<Categoria>();
+            foreach(Categoria cat in videogiocolocale.Categorie)
+            {
+                categorieRazza.Add(cat);
+            }
+            Razza nuovaRazza = new Razza(id, nome, categorieRazza);
+            videogiocolocale.AggiungiRazza(nuovaRazza);
+        }
+
+        private void btnPanic_Click(object sender, RoutedEventArgs e)
+        {
+            menu nuovoMenu = new menu(videogiocolocale);
+            nuovoMenu.Show();
+            this.Close();
+        }
     }
 }
