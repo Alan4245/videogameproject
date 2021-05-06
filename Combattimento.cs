@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,7 +49,7 @@ namespace Esercizio_Videogioco
             {
                 try
                 {
-                    Personaggio1 = value;
+                    _personaggio1 = value;
                 }
                 catch(Exception ex)
                 {
@@ -68,7 +68,7 @@ namespace Esercizio_Videogioco
             {
                 try
                 {
-                    Personaggio2 = value;
+                    _personaggio2 = value;
                 }
                 catch (Exception ex)
                 {
@@ -87,7 +87,7 @@ namespace Esercizio_Videogioco
             {
                 try
                 {
-                    Arma1 = value;
+                    _arma1 = value;
                 }
                 catch (Exception ex)
                 {
@@ -106,7 +106,7 @@ namespace Esercizio_Videogioco
             {
                 try
                 {
-                    Arma2 = value;
+                    _arma2 = value;
                 }
                 catch (Exception ex)
                 {
@@ -167,6 +167,8 @@ namespace Esercizio_Videogioco
             {
                 try
                 {
+                    if (value > Personaggio1.PuntiVita)
+                        throw new Exception("punti vita inseriti non validi");
                     _puntiVita1 = value;
                 }
                 catch (Exception ex)
@@ -185,6 +187,8 @@ namespace Esercizio_Videogioco
             {
                 try
                 {
+                    if (value > Personaggio2.PuntiVita)
+                        throw new Exception("punti vita inseriti non validi");
                     _puntiVita2 = value;
                 }
                 catch(Exception ex)
@@ -200,46 +204,61 @@ namespace Esercizio_Videogioco
         //è stata presa la decisione di far gestire alla classe chi dovesse fare la mossa e di fare il cambio del turno dopo
         public void Attacca()
         {
-            if (Turno == 0)
+            try
             {
-                PuntiVita2 -= Arma1.PuntiDanno;
-            }
-            else if (Turno == 1)
-            {
-                PuntiVita1 -= Arma2.PuntiDanno;
-            }
+                if (Turno == 0)
+                {
+                    PuntiVita2 -= Arma1.PuntiDanno;
+                }
+                else if (Turno == 1)
+                {
+                    PuntiVita1 -= Arma2.PuntiDanno;
+                }
 
-            Cambioturno();
+                Cambioturno();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            
         }
 
         public void RigeneraSalute()
         {
-            int percentualeSaluteGuadagnata = rnd.Next(5, 18);//percentuale di salute guadagnata compresa tra 5% e 17% 
-            double puntiVitaT;
-            if (Turno == 0)
+            try
             {
-                puntiVitaT = Personaggio1.PuntiVita;
-                puntiVitaT = (double)(puntiVitaT / 100) * percentualeSaluteGuadagnata;
-                PuntiVita1 += puntiVitaT;
+                int percentualeSaluteGuadagnata = rnd.Next(5, 18);//percentuale di salute guadagnata compresa tra 5% e 17% 
+                double puntiVitaT;
+                if (Turno == 0)
+                {
+                    puntiVitaT = Personaggio1.PuntiVita;
+                    puntiVitaT = (double)(puntiVitaT / 100) * percentualeSaluteGuadagnata;
+                    PuntiVita1 += puntiVitaT;
+                }
+                else if (Turno == 1)
+                {
+                    puntiVitaT = Personaggio2.PuntiVita;
+                    puntiVitaT = (double)(puntiVitaT / 100) * percentualeSaluteGuadagnata;
+                    PuntiVita1 += puntiVitaT;
+                }
+                Cambioturno();
             }
-            else if (Turno == 1)
+            catch(Exception ex)
             {
-                puntiVitaT = Personaggio2.PuntiVita;
-                puntiVitaT = (double)(puntiVitaT / 100) * percentualeSaluteGuadagnata;
-                PuntiVita1 += puntiVitaT;
+                throw ex;
             }
-            Cambioturno();
+            
         }
 
         //da definire
         public void AttivaAbilitàSpeciale()
         {
             throw new System.NotImplementedException();
-            //Cambioturno();
         }
         
         //gestione turno della grafica
-        public void Cambioturno()
+        private void Cambioturno()
         {
             if (Turno == 0)
                 Turno = 1;
@@ -284,12 +303,8 @@ namespace Esercizio_Videogioco
             return false;
                 
         }
-        //in teoria non ci serve, metodo già implementato
-        public void AssegnaVittoria(out Personaggio vincitore)
-        {
-            throw new System.NotImplementedException();
-        }
 
+        //metodo necessario?
         public void TerminaPartita()
         {
             throw new System.NotImplementedException();
