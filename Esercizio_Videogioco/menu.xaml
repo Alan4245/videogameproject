@@ -10,7 +10,7 @@
         <Image Source="417839.jpg" Stretch="Fill"/>
         <Button x:Name="Btn_Gioca" Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,48,0,0" FontSize="24" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS"/>
         <Button x:Name="Btn_Negozio" Content="Negozio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,122,0,0" FontSize="24" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS"/>
-        <Button x:Name="Btn_CreaPersonaggio" Content="Crea Personaggio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,345,0,0" FontSize="22" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Button x:Name="Btn_CreaPersonaggio" Content="Crea Personaggio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,345,0,0" FontSize="22" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS" Click="Btn_CreaPersonaggio_Click"/>
 
     </Grid>
 </Window>

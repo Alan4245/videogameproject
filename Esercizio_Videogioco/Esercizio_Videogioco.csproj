@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AggiungiElementi.xaml.cs">
+      <DependentUpon>AggiungiElementi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Categoria.cs" />
     <Compile Include="Combattimento.cs" />
     <Compile Include="Combattimento.xaml.cs">
@@ -78,6 +81,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="AggiungiElementi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Combattimento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

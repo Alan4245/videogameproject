@@ -6,6 +6,7 @@ using System.Xml.Serialization;
 
 namespace Esercizio_Videogioco
 {
+    [XmlRoot(ElementName = "Videogioco")]
     public class Videogioco
     {
         private List<Razza> _razze;
@@ -29,6 +30,7 @@ namespace Esercizio_Videogioco
             Categorie = c;
         }
 
+        [XmlElement(ElementName = "Razze")]
         public List<Razza> Razze
         {
             get
@@ -40,7 +42,7 @@ namespace Esercizio_Videogioco
                 _razze = value;
             }
         }
-
+        [XmlElement(ElementName = "Personaggi")]
         public List<Personaggio> Personaggi
         {
             get
@@ -52,7 +54,7 @@ namespace Esercizio_Videogioco
                 _personaggi = value;
             }
         }
-
+        [XmlElement(ElementName = "Armi")]
         public List<Arma> Armi
         {
             get
@@ -64,7 +66,7 @@ namespace Esercizio_Videogioco
                 _armi = value;
             }
         }
-
+        [XmlElement(ElementName = "Categorie")]
         public List<Categoria> Categorie
         {
             get

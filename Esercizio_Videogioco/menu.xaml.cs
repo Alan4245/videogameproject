@@ -29,7 +29,7 @@ namespace Esercizio_Videogioco
             Avviamento();
         }
 
-        public menu(List<Personaggio> personaggi, List<Razza> razze, List<Arma> armi, List<Categoria> categorie)
+        public menu(Videogioco videogioco)
         {
             InitializeComponent();
         }
@@ -39,31 +39,38 @@ namespace Esercizio_Videogioco
 
             try
             {
-                videogioco.Personaggi = DeserializzazionePersonaggi();
+                videogioco = Deserializzazione();
             }catch(Exception ex)
             {
-                MessageBox.Show("Impossibile caricare la lista di personaggi: " + ex.Message);
+                MessageBox.Show("Impossibile caricare la lista di elementi del videogioco: " + ex.Message);
             }
 
         }
 
-        public List<Personaggio> DeserializzazionePersonaggi()
+        public Videogioco Deserializzazione()
         {
-            List<Personaggio> personaggi = new List<Personaggio>();
+            Videogioco nuovoVideogioco = new Videogioco();
 
-            if (!File.Exists("personaggi.xml"))
+            if (!File.Exists("videogioco.xml"))
                 throw new FileNotFoundException("File non esistente");
 
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Personaggio>));
+            XmlSerializer serializer = new XmlSerializer(typeof(Videogioco));
 
-            using (Stream reader = new FileStream("personaggi.xml", FileMode.Open))
+            using (Stream reader = new FileStream("videogioco.xml", FileMode.Open))
             {
-                personaggi = (List<Personaggio>)serializer.Deserialize(reader);
+                nuovoVideogioco = (Videogioco)serializer.Deserialize(reader);
             }
 
-            return personaggi;
+            return nuovoVideogioco;
         }
 
+        private void Btn_CreaPersonaggio_Click(object sender, RoutedEventArgs e)
+        {
 
+            CreaPersonaggio schermataCreazioni = new CreaPersonaggio(videogioco);
+            schermataCreazioni.Show();
+            this.Close();
+
+        }
     }
 }

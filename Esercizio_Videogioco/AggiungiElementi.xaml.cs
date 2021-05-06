@@ -15,13 +15,21 @@ using System.Windows.Shapes;
 namespace Esercizio_Videogioco
 {
     /// <summary>
-    /// Logica di interazione per CreaPersonaggio.xaml
+    /// Logica di interazione per AggiungiElementi.xaml
     /// </summary>
-    public partial class CreaPersonaggio : Window
+    public partial class AggiungiElementi : Window
     {
-        public CreaPersonaggio(Videogioco videogioco)
+        public AggiungiElementi()
         {
             InitializeComponent();
+        }
+
+        private void btnCategoria_Click(object sender, RoutedEventArgs e)
+        {
+
+            string id = inputCategoriaID.Text;
+            string nome = inputCategoriaNOME.Text;
+
         }
     }
 }
