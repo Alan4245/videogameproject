@@ -21,17 +21,18 @@ namespace Esercizio_Videogioco
     /// </summary>
     public partial class menu : Window
     {
-        Videogioco videogioco;
+        Videogioco videogiocolocale;
         public menu()
         {
             InitializeComponent();
-            videogioco = new Videogioco();
+            videogiocolocale = new Videogioco();
             Avviamento();
         }
 
         public menu(Videogioco videogioco)
         {
             InitializeComponent();
+            videogiocolocale = videogioco;
         }
 
         public void Avviamento()
@@ -39,7 +40,7 @@ namespace Esercizio_Videogioco
 
             try
             {
-                videogioco = Deserializzazione();
+                videogiocolocale = Deserializzazione();
             }catch(Exception ex)
             {
                 MessageBox.Show("Impossibile caricare la lista di elementi del videogioco: " + ex.Message);
@@ -67,7 +68,7 @@ namespace Esercizio_Videogioco
         private void Btn_CreaPersonaggio_Click(object sender, RoutedEventArgs e)
         {
 
-            CreaPersonaggio schermataCreazioni = new CreaPersonaggio(videogioco);
+            CreaPersonaggio schermataCreazioni = new CreaPersonaggio(videogiocolocale);
             schermataCreazioni.Show();
             this.Close();
 

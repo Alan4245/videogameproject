@@ -13,24 +13,18 @@ namespace Esercizio_Videogioco
         private Razza _razza;
         private int _monete;
         private List<Arma> _armi;
-        private int _expRichiesta;
-        private int _moneteRichieste;
-        private double _puntiVita;
 
         public Personaggio()
         {
             Armi = new List<Arma>();
         }
 
-        public Personaggio(string nome, Razza razza, int expRich, int moneteRich, double lifePoints)
+        public Personaggio(string nome, Razza razza)
         {
             try
             {
                 Nome = nome;
                 Razza = razza;
-                ExpRichiesta = expRich;
-                MoneteRichieste = moneteRich;
-                PuntiVita = lifePoints;
 
                 Armi = new List<Arma>();
                 Exp = 0;
@@ -108,51 +102,9 @@ namespace Esercizio_Videogioco
             }
         }
 
-        public int ExpRichiesta
-        {
-            get
-            {
-                return _expRichiesta;
-            }
-            set
-            {
-                if (value < 0)
-                    throw new Exception("Valore esperienza richiesta personaggio non valido");
-                _expRichiesta = value;
-            }
-        }
-
-        public int MoneteRichieste
-        {
-            get
-            {
-                return _moneteRichieste;
-            }
-            set
-            {
-                if (value < 0)
-                    throw new Exception("Valore monete richieste personaggio non valido");
-                _moneteRichieste = value;
-            }
-        }
-
         public bool SeComprato
         {
             get; set;
-        }
-
-        public double PuntiVita
-        {
-            get
-            {
-                return _puntiVita;
-            }
-            set
-            {
-                if (value <= 0)
-                    throw new Exception("Valore punti vita non valido");
-                _puntiVita = value;
-            }
         }
 
         public void AggiungiArma(Arma a)

@@ -96,8 +96,8 @@ namespace Esercizio_Videogioco
         {
             double d1 = Arma1.PuntiDanno;
             double d2 = Arma2.PuntiDanno;
-            double p1 = Personaggio1.PuntiVita;
-            double p2 = Personaggio2.PuntiVita;
+            double p1 = Personaggio1.Razza.LifePoints;
+            double p2 = Personaggio2.Razza.LifePoints;
 
             while (p1 <= 0 || p2 <= 0)
             {
@@ -118,11 +118,11 @@ namespace Esercizio_Videogioco
             int xp = 0;
             if (Vincitore == Personaggio1)
             {
-                xp = (int)(10 + (Personaggio2.PuntiVita - Arma1.PuntiDanno));
+                xp = (int)(10 + (Personaggio2.Razza.LifePoints - Arma1.PuntiDanno));
             }
             else
             {
-                xp = (int)(10 + (Personaggio1.PuntiVita - Arma2.PuntiDanno));
+                xp = (int)(10 + (Personaggio1.Razza.LifePoints - Arma2.PuntiDanno));
             }
             return xp;
         }

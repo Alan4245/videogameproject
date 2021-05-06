@@ -12,6 +12,7 @@ namespace Esercizio_Videogioco
         private string _nome;
         private List<Categoria> _categorieArmi;
         private string _id;
+        private double _lp;
 
         public Razza()
         {
@@ -70,6 +71,20 @@ namespace Esercizio_Videogioco
                 if (String.IsNullOrEmpty(value))
                     throw new Exception("Nome razza non valido");
                 _nome = value;
+            }
+        }
+        [XmlElement(ElementName = "LifePoints")]
+        public double LifePoints
+        {
+            get
+            {
+                return _lp;
+            }
+            set
+            {
+                if (value <= 0)
+                    throw new Exception("Life point troppo bassi");
+                _lp = value;
             }
         }
 
