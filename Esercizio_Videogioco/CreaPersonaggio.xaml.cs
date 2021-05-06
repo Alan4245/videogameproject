@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace Esercizio_Videogioco
 {
@@ -50,6 +52,7 @@ namespace Esercizio_Videogioco
                     throw new Exception("Razza non selezionata");
                 Personaggio p = new Personaggio(txtNome.Text, v.Razze[Combo_Tipo_Personaggio.SelectedIndex]);
                 v.AggiungiPersonaggio(p);
+                Serializza();
                 menu nuovomenu = new menu(v);
                 nuovomenu.Show();
                 this.Close();
@@ -63,6 +66,14 @@ namespace Esercizio_Videogioco
         private void Combo_Tipo_Personaggio_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //Andrebbe cambiata l'immagine
+        }
+
+        public void Serializza()
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Videogioco));
+            TextWriter writer = new StreamWriter("videogioco.xml");
+            serializer.Serialize(writer, v);
+
         }
     }
 }

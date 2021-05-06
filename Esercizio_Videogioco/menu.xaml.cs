@@ -73,5 +73,12 @@ namespace Esercizio_Videogioco
             this.Close();
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AggiungiElementi nuovoAggiungiElementi = new AggiungiElementi(videogiocolocale);
+            nuovoAggiungiElementi.Show();
+            this.Close();
+        }
     }
 }

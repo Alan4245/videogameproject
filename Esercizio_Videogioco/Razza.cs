@@ -16,16 +16,17 @@ namespace Esercizio_Videogioco
 
         public Razza()
         {
-
+            _categorieArmi = new List<Categoria>();
         }
 
-        public Razza(string id, string nome, List<Categoria> cat)
+        public Razza(string id, string nome, List<Categoria> cat, double lp)
         {
             try
             {
                 ID = id;
                 Nome = nome;
                 CategorieArmi = cat;
+                LifePoints = lp;
             }
             catch (Exception ex)
             {

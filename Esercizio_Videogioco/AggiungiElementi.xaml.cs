@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace Esercizio_Videogioco
 {
@@ -40,20 +42,30 @@ namespace Esercizio_Videogioco
         {
             string id = inputRazzaID.Text;
             string nome = inputRazzaNOME.Text;
+            double lp = double.Parse(inputRazzaLP.Text);
             List<Categoria> categorieRazza = new List<Categoria>();
             foreach(Categoria cat in videogiocolocale.Categorie)
             {
                 categorieRazza.Add(cat);
             }
-            Razza nuovaRazza = new Razza(id, nome, categorieRazza);
+            Razza nuovaRazza = new Razza(id, nome, categorieRazza, lp);
             videogiocolocale.AggiungiRazza(nuovaRazza);
         }
 
         private void btnPanic_Click(object sender, RoutedEventArgs e)
         {
             menu nuovoMenu = new menu(videogiocolocale);
+            Serializza();
             nuovoMenu.Show();
             this.Close();
+        }
+
+        public void Serializza()
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Videogioco));
+            TextWriter writer = new StreamWriter("videogioco.xml");
+            serializer.Serialize(writer, videogiocolocale);
+
         }
     }
 }
