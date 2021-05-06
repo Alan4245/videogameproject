@@ -1,0 +1,20 @@
+﻿<Window x:Class="Esercizio_Videogioco.Negozio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Esercizio_Videogioco"
+        mc:Ignorable="d"
+        Title="Negozio" Height="450" Width="800">
+    <Grid>
+        <Image Source="bts3dho3e7f61.jpg" Stretch="Fill"/>
+        <ComboBox x:Name="cmbPersonaggi" HorizontalAlignment="Left" Margin="29,56,0,0" VerticalAlignment="Top" Width="153" SelectionChanged="cmbPersonaggi_SelectionChanged"/>
+        <Label Content="Seleziona un personaggio" HorizontalAlignment="Left" Margin="29,25,0,0" VerticalAlignment="Top" Width="153" Background="#FF895F5F"/>
+        <Label x:Name="lblSaldo" Content="" HorizontalAlignment="Left" Margin="29,352,0,0" VerticalAlignment="Top" Width="99" Background="#FF7A5353"/>
+        <Image HorizontalAlignment="Left" Height="141" Margin="596,25,0,0" VerticalAlignment="Top" Width="146"/>
+        <Button x:Name="btnAcquista" Content="" HorizontalAlignment="Left" Margin="596,202,0,0" VerticalAlignment="Top" Width="146" Click="btnAcquista_Click"/>
+        <Label x:Name="lblArma" Content="" HorizontalAlignment="Left" Margin="596,171,0,0" VerticalAlignment="Top" Width="146" Background="#FF744343"/>
+        <Button x:Name="btnBack" Content="Torna al menu" HorizontalAlignment="Left" Margin="667,358,0,0" VerticalAlignment="Top" Width="115" Height="51" Click="btnBack_Click"/>
+
+    </Grid>
+</Window>
