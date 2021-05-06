@@ -3,7 +3,7 @@
   <Class Name="Esercizio_Videogioco.Personaggio">
     <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEgCIAAAQABBAAQAQAgAAAACQABAAgAgAAAAgAEBQAA=</HashCode>
+      <HashCode>AEgCIAAAQABAAAAAQAgAAAACQABAAgAgAAAAgAEBQAA=</HashCode>
       <FileName>Personaggio.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -12,34 +12,32 @@
     <ShowAsCollectionAssociation>
       <Field Name="_armi" />
     </ShowAsCollectionAssociation>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Esercizio_Videogioco.Arma">
     <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAIAAAZAAEAAAgQADAgAAAQABAAAAAAAAAIEEAAAA=</HashCode>
+      <HashCode>ABAAIAAARAAEAAAgQADAgAAAQABAAAAAAAAAIEEAAAA=</HashCode>
       <FileName>Arma.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_categoria" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Esercizio_Videogioco.Razza">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACIAAAAAAAgAAAAABAAAAAAAAAAAAAQAAAAAEAAAA=</HashCode>
+      <HashCode>AAACIAAAAAAAgAAAgABAAAAAAAAAAAAAQAAAAAEAAAA=</HashCode>
       <FileName>Razza.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="_categorieArmi" />
     </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Esercizio_Videogioco.Categoria">
     <Position X="7" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAgAAAAABAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAgAAAgABAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Categoria.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Esercizio_Videogioco.Videogioco">
     <Position X="0.5" Y="2" Width="1.5" />
@@ -47,12 +45,10 @@
       <Path>
         <Point X="1.25" Y="5.67" />
         <Point X="2.008" Y="5.67" />
-        <Point X="2.008" Y="5.275" />
-        <Point X="4.917" Y="5.275" Type="JumpStart" />
-        <Point X="5.083" Y="5.275" Type="JumpEnd" />
-        <Point X="6.667" Y="5.275" Type="JumpStart" />
-        <Point X="6.833" Y="5.275" Type="JumpEnd" />
-        <Point X="7" Y="5.275" />
+        <Point X="2.008" Y="4.927" />
+        <Point X="4.917" Y="4.927" Type="JumpStart" />
+        <Point X="5.083" Y="4.927" Type="JumpEnd" />
+        <Point X="7" Y="4.927" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -69,22 +65,18 @@
   <Class Name="Esercizio_Videogioco.Negozio">
     <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQAAAAAIAAACEAAAAAgAAAAAAAEQAAAAAAAAAAAAA=</HashCode>
-      <FileName>Negozio.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Negozio.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Esercizio_Videogioco.Combattimento">
     <Position X="11.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACCAAAAAAAABAAAABAAgQAAAAAAAAAAAEAAAgAAwA=</HashCode>
-      <FileName>Combattimento.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Combattimento.xaml.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_personaggio1" />
-      <Field Name="_personaggio2" />
-      <Field Name="_arma1" />
-      <Field Name="_arma2" />
-    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

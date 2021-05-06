@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Esercizio_Videogioco
 {
-    public class Personaggio : IComparable<Personaggio>
+    public class Personaggio
     {
         private string _nome;
         private int _exp;
@@ -18,7 +19,27 @@ namespace Esercizio_Videogioco
 
         public Personaggio()
         {
-            throw new System.NotImplementedException();
+            Armi = new List<Arma>();
+        }
+
+        public Personaggio(string nome, Razza razza, int expRich, int moneteRich, double lifePoints)
+        {
+            try
+            {
+                Nome = nome;
+                Razza = razza;
+                ExpRichiesta = expRich;
+                MoneteRichieste = moneteRich;
+                PuntiVita = lifePoints;
+
+                Armi = new List<Arma>();
+                Exp = 0;
+                Monete = 0;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public string Nome
@@ -29,12 +50,9 @@ namespace Esercizio_Videogioco
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new Exception("Il nome inserito non è valido");
-                }
-
-                Nome = value;
+                if (String.IsNullOrEmpty(value))
+                    throw new Exception("Nome personaggio non valido");
+                _nome = value;
             }
         }
 
@@ -46,12 +64,9 @@ namespace Esercizio_Videogioco
             }
             set
             {
-                if(value < 0 && value > _exp)
-                {
-                    throw new Exception("L'esperienza inserita non è valida");
-                }
-
-                Exp = value;
+                if (value < 0)
+                    throw new Exception("Valore esperienza personaggio non valido");
+                _exp = value;
             }
         }
 
@@ -64,80 +79,105 @@ namespace Esercizio_Videogioco
             set
             {
                 if (value < 0)
-                {
-                    throw new Exception("Le monete inserite non sono valide");
-                }
-
-                Monete = value;
+                    throw new Exception("Valore monete personaggio non valido");
+                _monete = value;
             }
         }
 
         public List<Arma> Armi
         {
-            get => default;
+            get
+            {
+                return _armi;
+            }
             set
             {
+                _armi = value;
             }
         }
 
         public Razza Razza
         {
-            get => default;
+            get
+            {
+                return _razza;
+            }
             set
             {
+                _razza = value;
             }
         }
 
         public int ExpRichiesta
         {
-            get => default;
+            get
+            {
+                return _expRichiesta;
+            }
             set
             {
+                if (value < 0)
+                    throw new Exception("Valore esperienza richiesta personaggio non valido");
+                _expRichiesta = value;
             }
         }
 
         public int MoneteRichieste
         {
-            get => default;
+            get
+            {
+                return _moneteRichieste;
+            }
             set
             {
+                if (value < 0)
+                    throw new Exception("Valore monete richieste personaggio non valido");
+                _moneteRichieste = value;
             }
         }
 
         public bool SeComprato
         {
-            get => default;
-            set
-            {
-            }
+            get; set;
         }
 
         public double PuntiVita
         {
-            get => default;
+            get
+            {
+                return _puntiVita;
+            }
             set
             {
+                if (value <= 0)
+                    throw new Exception("Valore punti vita non valido");
+                _puntiVita = value;
             }
         }
 
-        public void AggiungiArma()
+        public void AggiungiArma(Arma a)
         {
-            throw new System.NotImplementedException();
+            foreach (Arma b in Armi)
+            {
+                if (b.GetID() == a.GetID())
+                {
+                    throw new Exception("Arma già aggiunta");
+                }
+            }
+            Armi.Add(a);
         }
 
-        public int CompareTo(Personaggio other)
+        public void RimuoviArma(Arma a)
         {
-            throw new NotImplementedException();
-        }
-
-        public void RimuoviArma()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public bool IsComprato()
-        {
-            throw new System.NotImplementedException();
+            foreach (Arma b in Armi)
+            {
+                if (b.GetID() == a.GetID())
+                {
+                    Armi.Remove(a);
+                    return;
+                }
+            }
+            throw new Exception("Arma mai aggiunta");
         }
     }
 }

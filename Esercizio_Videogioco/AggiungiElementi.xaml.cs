@@ -19,9 +19,11 @@ namespace Esercizio_Videogioco
     /// </summary>
     public partial class AggiungiElementi : Window
     {
-        public AggiungiElementi()
+        Videogioco videogiocolocale;
+        public AggiungiElementi(Videogioco videogioco)
         {
             InitializeComponent();
+            videogiocolocale = videogioco;
         }
 
         private void btnCategoria_Click(object sender, RoutedEventArgs e)
@@ -29,6 +31,8 @@ namespace Esercizio_Videogioco
 
             string id = inputCategoriaID.Text;
             string nome = inputCategoriaNOME.Text;
+            Categoria nuovaCat = new Categoria(id, nome);
+            videogiocolocale.AggiungiCategoria(nuovaCat);
 
         }
     }
