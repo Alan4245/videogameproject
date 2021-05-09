@@ -15,6 +15,7 @@ namespace Esercizio_Videogioco
         private Guid  _id;
         private int _moneteRichieste;
         private int _expRichiesta;
+        private Categoria _categoria;
 
         public Arma(string descrizione, string nome, double puntiDanno, Categoria categoria, int expRichiesta, int moneteRichieste, bool seComprata)
         {
@@ -26,6 +27,11 @@ namespace Esercizio_Videogioco
             MoneteRichieste = moneteRichieste;
             SeComprata = seComprata;
             _id = Guid.NewGuid();
+        }
+
+        public Arma()
+        {
+
         }
 
         [XmlElement(ElementName = "Descrizione")]
@@ -47,7 +53,8 @@ namespace Esercizio_Videogioco
                 }
             }
         }
-            public Guid GetID()
+
+        public Guid GetID()
             {
                 return _id;
             }
@@ -90,8 +97,11 @@ namespace Esercizio_Videogioco
         [XmlElement(ElementName = "Categoria")]
         public Categoria Categoria
         {
-            get;
-            set;
+            get => _categoria;
+            set
+            {
+                _categoria = value;
+            }
         }
         [XmlElement(ElementName = "ExpRichiesta")]
         public int ExpRichiesta
