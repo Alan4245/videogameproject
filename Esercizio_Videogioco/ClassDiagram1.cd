@@ -16,7 +16,7 @@
   <Class Name="Esercizio_Videogioco.Arma">
     <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAIAAAYAAEAAAgQADAgAAAQABAAAAAAAAAIAEAAAA=</HashCode>
+      <HashCode>ABAAIAAAYAAEAAAkQADAgAAAQABAAAAAAAAAIAEAAAA=</HashCode>
       <FileName>Arma.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -34,7 +34,7 @@
   <Class Name="Esercizio_Videogioco.Categoria">
     <Position X="7" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAgAAAgABAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAgAAEgABAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Categoria.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -65,7 +65,7 @@
   <Class Name="Esercizio_Videogioco.Negozio">
     <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEAIA=</HashCode>
+      <HashCode>AAgAAAAAEAAAAAIAIAAAEAAAAAAAAAAAAAAAAAAEAIA=</HashCode>
       <FileName>Negozio.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

@@ -134,5 +134,10 @@ namespace Esercizio_Videogioco
                 }
             }
         }
+
+        public override string ToString()
+        {
+            return Nome + " - " + Categoria;
+        }
     }
 }

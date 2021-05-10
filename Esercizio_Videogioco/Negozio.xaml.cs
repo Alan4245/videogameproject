@@ -48,7 +48,18 @@ namespace Esercizio_Videogioco
             Livello.Content = "LVL. " + p.Exp / 100;
             ProgressLivello.Value = p.Exp % 100;
             PercentualeProgressBar.Content = p.Exp % 100 + "%";
-            
+            _armiPossedute = _negozio.OttieniArmiPossedute(p);
+            _armiAbilitate = _negozio.OttieniArmiAbilitatePersonaggio(p);
+            ComboArma.Items.Clear();
+            foreach(Arma arma in _armiAbilitate)
+            {
+                ComboArma.Items.Add(arma);
+            }
+
+            foreach(Arma arma in _armiPossedute)
+            {
+                ComboArma.Items.Add(arma + " - POSS");
+            }
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
