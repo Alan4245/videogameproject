@@ -113,6 +113,7 @@ namespace Esercizio_Videogioco
                 NomeArma.Content = arma.Nome + " - POSSEDUTA";
                 _videogioco.RimuoviPersonaggio(p);
                 _videogioco.AggiungiPersonaggio(p);
+                Serializza();
             }
             else if(p.Monete < arma.MoneteRichieste && p.Exp < arma.ExpRichiesta)
             {

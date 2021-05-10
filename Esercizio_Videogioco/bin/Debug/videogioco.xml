@@ -65,29 +65,6 @@
     <LifePoints>6000</LifePoints>
   </Razze>
   <Personaggi>
-    <Nome>ORCOO</Nome>
-    <Exp>135</Exp>
-    <Monete>5000</Monete>
-    <Armi />
-    <Razza ID="L5">
-      <CategorieArmi ID="A1">
-        <Nome>CorpoACorpo</Nome>
-      </CategorieArmi>
-      <CategorieArmi ID="B2">
-        <Nome>Mischia</Nome>
-      </CategorieArmi>
-      <CategorieArmi ID="C3">
-        <Nome>Distanza</Nome>
-      </CategorieArmi>
-      <CategorieArmi ID="D4">
-        <Nome>BastoneMagico</Nome>
-      </CategorieArmi>
-      <Nome>Shrek</Nome>
-      <LifePoints>16000</LifePoints>
-    </Razza>
-    <SeComprato>false</SeComprato>
-  </Personaggi>
-  <Personaggi>
     <Nome>Amogus</Nome>
     <Exp>0</Exp>
     <Monete>0</Monete>
@@ -107,6 +84,39 @@
       </CategorieArmi>
       <Nome>Strega</Nome>
       <LifePoints>8000</LifePoints>
+    </Razza>
+    <SeComprato>false</SeComprato>
+  </Personaggi>
+  <Personaggi>
+    <Nome>ORCOO</Nome>
+    <Exp>135</Exp>
+    <Monete>4200</Monete>
+    <Armi>
+      <Arma Nome="Clava">
+        <Descrizione>Un bel pezzo di legno</Descrizione>
+        <PuntiDanno>1500</PuntiDanno>
+        <Categoria ID="B2">
+          <Nome>Mischia</Nome>
+        </Categoria>
+        <ExpRichiesta>100</ExpRichiesta>
+        <MoneteRichieste>800</MoneteRichieste>
+      </Arma>
+    </Armi>
+    <Razza ID="L5">
+      <CategorieArmi ID="A1">
+        <Nome>CorpoACorpo</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="B2">
+        <Nome>Mischia</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="C3">
+        <Nome>Distanza</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="D4">
+        <Nome>BastoneMagico</Nome>
+      </CategorieArmi>
+      <Nome>Shrek</Nome>
+      <LifePoints>16000</LifePoints>
     </Razza>
     <SeComprato>false</SeComprato>
   </Personaggi>
