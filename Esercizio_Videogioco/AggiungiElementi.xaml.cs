@@ -52,6 +52,22 @@ namespace Esercizio_Videogioco
             videogiocolocale.AggiungiRazza(nuovaRazza);
         }
 
+        private void btnArma_Click(object sender, RoutedEventArgs e)
+        {
+
+            string descrizione = inputArmaDESCRIZIONE.Text;
+            string nome = inputArmaNOME.Text;
+            double puntiDanno = double.Parse(inputArmaPUNTIDANNO.Text);
+            int expSblocco = int.Parse(inputArmaEXP.Text);
+            int costoDenaro = int.Parse(inputArmaMONETE.Text);
+            Random r = new Random();
+            int k = videogiocolocale.Categorie.Count;
+            Categoria cat = videogiocolocale.Categorie.ElementAt<Categoria>(k);
+            Arma nuovaArma = new Arma(descrizione, nome, puntiDanno, cat, expSblocco, costoDenaro);
+            videogiocolocale.AggiungiArma(nuovaArma);
+
+        }
+
         private void btnPanic_Click(object sender, RoutedEventArgs e)
         {
             menu nuovoMenu = new menu(videogiocolocale);

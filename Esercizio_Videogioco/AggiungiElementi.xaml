@@ -20,6 +20,10 @@
         <TextBox x:Name="inputArmaNOME" HorizontalAlignment="Left" Height="35" Margin="360,115,0,0" TextWrapping="Wrap" Text="NOME" VerticalAlignment="Top" Width="110"/>
         <Button x:Name="btnPanic" Content="CONFERMA SOS" HorizontalAlignment="Left" Height="60" Margin="540,340,0,0" VerticalAlignment="Top" Width="230" Click="btnPanic_Click"/>
         <TextBox x:Name="inputRazzaLP" HorizontalAlignment="Left" Height="35" Margin="165,165,0,0" TextWrapping="Wrap" Text="Life Points" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="inputArmaPUNTIDANNO" HorizontalAlignment="Left" Height="35" Margin="360,165,0,0" TextWrapping="Wrap" Text="Punti Danno" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="inputArmaEXP" HorizontalAlignment="Left" Height="35" Margin="360,210,0,0" TextWrapping="Wrap" Text="EXP NECESSARIA" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="inputArmaMONETE" HorizontalAlignment="Left" Height="35" Margin="360,255,0,0" TextWrapping="Wrap" Text="COSTO IN DENARO" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="btnArma" Content="ADD" HorizontalAlignment="Left" Height="30" Margin="360,305,0,0" VerticalAlignment="Top" Width="110" Click="btnArma_Click"/>
 
     </Grid>
 </Window>
