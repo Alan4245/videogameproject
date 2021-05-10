@@ -67,7 +67,7 @@
   <Personaggi>
     <Nome>ORCOO</Nome>
     <Exp>135</Exp>
-    <Monete>500</Monete>
+    <Monete>5000</Monete>
     <Armi />
     <Razza ID="L5">
       <CategorieArmi ID="A1">
@@ -116,7 +116,7 @@
     <Categoria ID="C3">
       <Nome>Distanza</Nome>
     </Categoria>
-    <ExpRichiesta>350</ExpRichiesta>
+    <ExpRichiesta>300</ExpRichiesta>
     <MoneteRichieste>3000</MoneteRichieste>
   </Armi>
   <Armi Nome="Fucile assalto">

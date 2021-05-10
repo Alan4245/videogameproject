@@ -41,7 +41,7 @@ namespace Esercizio_Videogioco
             {
                 foreach(Categoria cat in p.Razza.CategorieArmi)
                 {
-                    if (arma.Categoria.Equals(p.Razza.CategorieArmi))
+                    if (arma.Categoria.Equals(cat))
                         armiAbilitate.Add(arma);
                 }
             }

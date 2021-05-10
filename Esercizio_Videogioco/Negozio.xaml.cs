@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace Esercizio_Videogioco
 {
@@ -44,21 +46,17 @@ namespace Esercizio_Videogioco
         {
             Personaggio p = ComboPersonaggio.SelectedItem as Personaggio;
             NomePersonaggioScelto.Content = p.Nome;
-            Soldi.Content = p.Monete;
+            Soldi.Content = p.Monete + " $";
             Livello.Content = "LVL. " + p.Exp / 100;
             ProgressLivello.Value = p.Exp % 100;
             PercentualeProgressBar.Content = p.Exp % 100 + "%";
             _armiPossedute = _negozio.OttieniArmiPossedute(p);
             _armiAbilitate = _negozio.OttieniArmiAbilitatePersonaggio(p);
+            btnCompra.IsEnabled = false;
             ComboArma.Items.Clear();
             foreach(Arma arma in _armiAbilitate)
             {
                 ComboArma.Items.Add(arma);
-            }
-
-            foreach(Arma arma in _armiPossedute)
-            {
-                ComboArma.Items.Add(arma + " - POSS");
             }
         }
 
@@ -68,6 +66,74 @@ namespace Esercizio_Videogioco
             menu nuovoMenu = new menu(_videogioco);
             nuovoMenu.Show();
             this.Close();
+
+        }
+
+        private void ComboArma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(ComboArma.SelectedIndex >= 0)
+            {
+                Personaggio p = ComboPersonaggio.SelectedItem as Personaggio;
+                Arma arma = ComboArma.SelectedItem as Arma;
+                NomeArma.Content = arma.Nome;
+                Descrizione.Content = arma.Descrizione;
+                LivelloRichiesto.Content = "LVL. SBLOCCO: " + arma.ExpRichiesta / 100;
+                SoldiRichiesti.Content = "COSTO: " + arma.MoneteRichieste + " $";
+                btnCompra.IsEnabled = true;
+                foreach (Arma armaPersonaggio in p.Armi)
+                {
+                    if (armaPersonaggio.Nome == arma.Nome)
+                    {
+                        NomeArma.Content = arma.Nome + " - POSSEDUTA";
+                        btnCompra.IsEnabled = false;
+                    }
+                        
+                }
+            }
+
+        }
+
+        private void btnCompra_Click(object sender, RoutedEventArgs e)
+        {
+            Personaggio p = ComboPersonaggio.SelectedItem as Personaggio;
+            Arma arma = ComboArma.SelectedItem as Arma;
+            if (p.Monete >= arma.MoneteRichieste && p.Exp >= arma.ExpRichiesta)
+            {
+                p.Monete = p.Monete - arma.MoneteRichieste;
+                p.AggiungiArma(arma);
+
+                btnCompra.IsEnabled = false;
+
+                ComboArma.Items.Clear();
+                foreach (Arma arma2 in _armiAbilitate)
+                {
+                    ComboArma.Items.Add(arma2);
+                }
+                Soldi.Content = p.Monete + " $";
+                NomeArma.Content = arma.Nome + " - POSSEDUTA";
+                _videogioco.RimuoviPersonaggio(p);
+                _videogioco.AggiungiPersonaggio(p);
+            }
+            else if(p.Monete < arma.MoneteRichieste && p.Exp < arma.ExpRichiesta)
+            {
+                MessageBox.Show("Non hai raggiunto l'esperienza necessaria e sei anche povero!");
+            }
+            else if (p.Monete >= arma.MoneteRichieste)
+            {
+                MessageBox.Show("Non hai raggiunto l'esperienza necessaria!");
+            }
+            else
+            {
+                MessageBox.Show("Non hai sufficienti monete!");
+            }
+
+        }
+
+        public void Serializza()
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Videogioco));
+            TextWriter writer = new StreamWriter("videogioco.xml");
+            serializer.Serialize(writer, _videogioco);
 
         }
     }
