@@ -131,5 +131,10 @@ namespace Esercizio_Videogioco
             }
             throw new Exception("Arma mai aggiunta");
         }
+
+        public override string ToString()
+        {
+            return Nome + " - " + Razza.Nome;
+        }
     }
 }

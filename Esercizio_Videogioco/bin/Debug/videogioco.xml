@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Videogioco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Razze ID="L5">
+    <CategorieArmi ID="A1">
+      <Nome>CorpoACorpo</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Mischia</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Distanza</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>BastoneMagico</Nome>
+    </CategorieArmi>
+    <Nome>Shrek</Nome>
+    <LifePoints>16000</LifePoints>
+  </Razze>
+  <Razze ID="M6">
+    <CategorieArmi ID="A1">
+      <Nome>CorpoACorpo</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Mischia</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Distanza</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>BastoneMagico</Nome>
+    </CategorieArmi>
+    <Nome>Gigante</Nome>
+    <LifePoints>14000</LifePoints>
+  </Razze>
+  <Razze ID="N7">
+    <CategorieArmi ID="A1">
+      <Nome>CorpoACorpo</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Mischia</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Distanza</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>BastoneMagico</Nome>
+    </CategorieArmi>
+    <Nome>Strega</Nome>
+    <LifePoints>8000</LifePoints>
+  </Razze>
+  <Razze ID="O8">
+    <CategorieArmi ID="A1">
+      <Nome>CorpoACorpo</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Mischia</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Distanza</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>BastoneMagico</Nome>
+    </CategorieArmi>
+    <Nome>Goblin</Nome>
+    <LifePoints>6000</LifePoints>
+  </Razze>
+  <Personaggi>
+    <Nome>ORCOO</Nome>
+    <Exp>0</Exp>
+    <Monete>0</Monete>
+    <Armi />
+    <Razza ID="L5">
+      <CategorieArmi ID="A1">
+        <Nome>CorpoACorpo</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="B2">
+        <Nome>Mischia</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="C3">
+        <Nome>Distanza</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="D4">
+        <Nome>BastoneMagico</Nome>
+      </CategorieArmi>
+      <Nome>Shrek</Nome>
+      <LifePoints>16000</LifePoints>
+    </Razza>
+    <SeComprato>false</SeComprato>
+  </Personaggi>
+  <Personaggi>
+    <Nome>Amogus</Nome>
+    <Exp>0</Exp>
+    <Monete>0</Monete>
+    <Armi />
+    <Razza ID="N7">
+      <CategorieArmi ID="A1">
+        <Nome>CorpoACorpo</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="B2">
+        <Nome>Mischia</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="C3">
+        <Nome>Distanza</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="D4">
+        <Nome>BastoneMagico</Nome>
+      </CategorieArmi>
+      <Nome>Strega</Nome>
+      <LifePoints>8000</LifePoints>
+    </Razza>
+    <SeComprato>false</SeComprato>
+  </Personaggi>
+  <Armi Nome="Lanciarazzi">
+    <Descrizione>Un arma di distruzione di massa</Descrizione>
+    <PuntiDanno>4000</PuntiDanno>
+    <Categoria ID="C3">
+      <Nome>Distanza</Nome>
+    </Categoria>
+    <ExpRichiesta>350</ExpRichiesta>
+    <MoneteRichieste>3000</MoneteRichieste>
+  </Armi>
+  <Armi Nome="Fucile assalto">
+    <Descrizione>Un fucile compatto</Descrizione>
+    <PuntiDanno>3000</PuntiDanno>
+    <Categoria ID="A1">
+      <Nome>CorpoACorpo</Nome>
+    </Categoria>
+    <ExpRichiesta>200</ExpRichiesta>
+    <MoneteRichieste>2000</MoneteRichieste>
+  </Armi>
+  <Armi Nome="Clava">
+    <Descrizione>Un bel pezzo di legno</Descrizione>
+    <PuntiDanno>1500</PuntiDanno>
+    <Categoria ID="B2">
+      <Nome>Mischia</Nome>
+    </Categoria>
+    <ExpRichiesta>100</ExpRichiesta>
+    <MoneteRichieste>800</MoneteRichieste>
+  </Armi>
+  <Categorie ID="A1">
+    <Nome>CorpoACorpo</Nome>
+  </Categorie>
+  <Categorie ID="B2">
+    <Nome>Mischia</Nome>
+  </Categorie>
+  <Categorie ID="C3">
+    <Nome>Distanza</Nome>
+  </Categorie>
+  <Categorie ID="D4">
+    <Nome>BastoneMagico</Nome>
+  </Categorie>
+</Videogioco>

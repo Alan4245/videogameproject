@@ -80,5 +80,12 @@ namespace Esercizio_Videogioco
             nuovoAggiungiElementi.Show();
             this.Close();
         }
+
+        private void Btn_Negozio_Click(object sender, RoutedEventArgs e)
+        {
+            Negozio schermatanegozio = new Negozio(videogiocolocale);
+            schermatanegozio.Show();
+            this.Close();
+        }
     }
 }
