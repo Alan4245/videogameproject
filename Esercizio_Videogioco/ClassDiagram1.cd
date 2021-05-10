@@ -3,7 +3,7 @@
   <Class Name="Esercizio_Videogioco.Personaggio">
     <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEACIAAAAABAAAAAAAgAAAACAAAAAAAgAAAAgAEBQAA=</HashCode>
+      <HashCode>AEACIAAAAABAAAAEAAgAAAACAAAAAAAgAAAAgAEBQAA=</HashCode>
       <FileName>Personaggio.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -16,7 +16,7 @@
   <Class Name="Esercizio_Videogioco.Arma">
     <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAIAAARAAEAAAgQADAgAAAQABAAAAAAAAAIEEAAAA=</HashCode>
+      <HashCode>ABAAIAAAYAAEAAAgQADAgAAAQABAAAAAAAAAIAEAAAA=</HashCode>
       <FileName>Arma.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -45,10 +45,10 @@
       <Path>
         <Point X="1.25" Y="5.67" />
         <Point X="2.008" Y="5.67" />
-        <Point X="2.008" Y="3.883" />
-        <Point X="4.917" Y="3.883" Type="JumpStart" />
-        <Point X="5.083" Y="3.883" Type="JumpEnd" />
-        <Point X="7" Y="3.883" />
+        <Point X="2.008" Y="4.057" />
+        <Point X="4.917" Y="4.057" Type="JumpStart" />
+        <Point X="5.083" Y="4.057" Type="JumpEnd" />
+        <Point X="7" Y="4.057" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -65,7 +65,7 @@
   <Class Name="Esercizio_Videogioco.Negozio">
     <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEAIA=</HashCode>
       <FileName>Negozio.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

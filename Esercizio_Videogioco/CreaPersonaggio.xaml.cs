@@ -75,5 +75,15 @@ namespace Esercizio_Videogioco
             serializer.Serialize(writer, v);
 
         }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+
+            menu nuovoMenu = new menu(v);
+            nuovoMenu.Show();
+            this.Close();
+
+
+        }
     }
 }

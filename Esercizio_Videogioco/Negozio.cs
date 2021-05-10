@@ -7,6 +7,12 @@ namespace Esercizio_Videogioco
 {
     public class Negozioclass
     {
+        private Videogioco _videogiocolocale;
+        public Negozioclass(Videogioco videogioco)
+        {
+            _videogiocolocale = videogioco;
+        }
+
 
         public void AggiungiArmaPersonaggio()
         {
@@ -28,19 +34,23 @@ namespace Esercizio_Videogioco
             throw new System.NotImplementedException();
         }
 
-        public void OttieniArmiAbilitatePersonaggio()
+        public List<Arma> OttieniArmiAbilitatePersonaggio(Personaggio p)
         {
-            throw new System.NotImplementedException();
+            List<Arma> armiAbilitate = new List<Arma>();
+            foreach(Arma arma in _videogiocolocale.Armi)
+            {
+                foreach(Categoria cat in p.Razza.CategorieArmi)
+                {
+                    if (arma.Categoria.Equals(p.Razza.CategorieArmi))
+                        armiAbilitate.Add(arma);
+                }
+            }
+            return armiAbilitate;
         }
 
-        public void OttieniPersonaggio()
+        public List<Arma> OttieniArmiPossedute(Personaggio p)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void OttieniArmiPossedute()
-        {
-            throw new System.NotImplementedException();
+            return p.Armi;
         }
     }
 }
