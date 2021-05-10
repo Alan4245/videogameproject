@@ -62,6 +62,7 @@ namespace Esercizio_Videogioco
             int costoDenaro = int.Parse(inputArmaMONETE.Text);
             Random r = new Random();
             int k = videogiocolocale.Categorie.Count;
+            k = r.Next(0, k);
             Categoria cat = videogiocolocale.Categorie.ElementAt<Categoria>(k);
             Arma nuovaArma = new Arma(descrizione, nome, puntiDanno, cat, expSblocco, costoDenaro);
             videogiocolocale.AggiungiArma(nuovaArma);
