@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Videogioco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Razze ID="E5">
+    <CategorieArmi ID="A1">
+      <Nome>Fuoco</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Pesante</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Leggere</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>Magica</Nome>
+    </CategorieArmi>
+    <ImgPath>imgrazze/DinoNoArma.png</ImgPath>
+    <Nome>Dino</Nome>
+    <LifePoints>200</LifePoints>
+  </Razze>
+  <Razze ID="F6">
+    <CategorieArmi ID="A1">
+      <Nome>Fuoco</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Pesante</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Leggere</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>Magica</Nome>
+    </CategorieArmi>
+    <ImgPath>imgrazze/GiganteNoArma.png</ImgPath>
+    <Nome>Gigante</Nome>
+    <LifePoints>450</LifePoints>
+  </Razze>
+  <Razze ID="G7">
+    <CategorieArmi ID="A1">
+      <Nome>Fuoco</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Pesante</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Leggere</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>Magica</Nome>
+    </CategorieArmi>
+    <ImgPath>imgrazze/MagoNoArma.png</ImgPath>
+    <Nome>Mago</Nome>
+    <LifePoints>250</LifePoints>
+  </Razze>
+  <Razze ID="H8">
+    <CategorieArmi ID="A1">
+      <Nome>Fuoco</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Pesante</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Leggere</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>Magica</Nome>
+    </CategorieArmi>
+    <ImgPath>imgrazze/OrcoNoArma.png</ImgPath>
+    <Nome>Orco</Nome>
+    <LifePoints>350</LifePoints>
+  </Razze>
+  <Razze ID="L10">
+    <CategorieArmi ID="A1">
+      <Nome>Fuoco</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Pesante</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Leggere</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>Magica</Nome>
+    </CategorieArmi>
+    <ImgPath>imgrazze/PikachuNoArma.png</ImgPath>
+    <Nome>Pokemon</Nome>
+    <LifePoints>200</LifePoints>
+  </Razze>
+  <Razze ID="M11">
+    <CategorieArmi ID="A1">
+      <Nome>Fuoco</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Pesante</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Leggere</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>Magica</Nome>
+    </CategorieArmi>
+    <ImgPath>imgrazze/RwondoNoArma.png</ImgPath>
+    <Nome>Trapper</Nome>
+    <LifePoints>569</LifePoints>
+  </Razze>
+  <Razze ID="N12">
+    <CategorieArmi ID="A1">
+      <Nome>Fuoco</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="B2">
+      <Nome>Pesante</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="C3">
+      <Nome>Leggere</Nome>
+    </CategorieArmi>
+    <CategorieArmi ID="D4">
+      <Nome>Magica</Nome>
+    </CategorieArmi>
+    <ImgPath>imgrazze/ZombieNoArma.png</ImgPath>
+    <Nome>Zombie</Nome>
+    <LifePoints>150</LifePoints>
+  </Razze>
+  <Personaggi>
+    <Nome>T-REX</Nome>
+    <Exp>0</Exp>
+    <Monete>0</Monete>
+    <Armi />
+    <Razza ID="E5">
+      <CategorieArmi ID="A1">
+        <Nome>Fuoco</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="B2">
+        <Nome>Pesante</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="C3">
+        <Nome>Leggere</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="D4">
+        <Nome>Magica</Nome>
+      </CategorieArmi>
+      <ImgPath>imgrazze/DinoNoArma.png</ImgPath>
+      <Nome>Dino</Nome>
+      <LifePoints>200</LifePoints>
+    </Razza>
+    <SeComprato>false</SeComprato>
+  </Personaggi>
+  <Armi Nome="Mano">
+    <Descrizione>È una mano.</Descrizione>
+    <PuntiDanno>1</PuntiDanno>
+    <Categoria ID="B2">
+      <Nome>Pesante</Nome>
+    </Categoria>
+    <ExpRichiesta>0</ExpRichiesta>
+    <MoneteRichieste>0</MoneteRichieste>
+  </Armi>
+  <Armi Nome="Spada">
+    <Descrizione>Una lama molto affilata che fa male.</Descrizione>
+    <PuntiDanno>20</PuntiDanno>
+    <Categoria ID="D4">
+      <Nome>Magica</Nome>
+    </Categoria>
+    <ExpRichiesta>5</ExpRichiesta>
+    <MoneteRichieste>50</MoneteRichieste>
+  </Armi>
+  <Categorie ID="A1">
+    <Nome>Fuoco</Nome>
+  </Categorie>
+  <Categorie ID="B2">
+    <Nome>Pesante</Nome>
+  </Categorie>
+  <Categorie ID="C3">
+    <Nome>Leggere</Nome>
+  </Categorie>
+  <Categorie ID="D4">
+    <Nome>Magica</Nome>
+  </Categorie>
+</Videogioco>

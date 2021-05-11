@@ -166,5 +166,15 @@
   <ItemGroup>
     <Resource Include="30b248bebd0ba56a0f20907fe9613da9.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgrazze\DinoNoArma.png" />
+    <Resource Include="imgrazze\GiganteNoArma.png" />
+    <Resource Include="imgrazze\MagoNoArma.png" />
+    <Resource Include="imgrazze\OrcoNoArma.png" />
+    <Resource Include="imgrazze\PersonaNormalissimaNoArma.png" />
+    <Resource Include="imgrazze\PikachuNoArma.png" />
+    <Resource Include="imgrazze\RwondoNoArma.png" />
+    <Resource Include="imgrazze\ZombieNoArma.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
