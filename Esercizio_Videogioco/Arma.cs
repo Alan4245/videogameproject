@@ -16,8 +16,9 @@ namespace Esercizio_Videogioco
         private int _moneteRichieste;
         private int _expRichiesta;
         private Categoria _categoria;
+        private string _imgPath;
 
-        public Arma(string descrizione, string nome, double puntiDanno, Categoria categoria, int expRichiesta, int moneteRichieste)
+        public Arma(string descrizione, string nome, double puntiDanno, Categoria categoria, int expRichiesta, int moneteRichieste, string imgPath)
         {
             Descrizione = descrizione;
             Nome = nome;
@@ -50,6 +51,19 @@ namespace Esercizio_Videogioco
                 {
                     _descrizione = value;
                 }
+            }
+        }
+
+        [XmlElement(ElementName = "ImgPath")]
+        public string ImgPath
+        {
+            get
+            {
+                return _imgPath;
+            }
+            set
+            {
+                _imgPath = value;
             }
         }
 

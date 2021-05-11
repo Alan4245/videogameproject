@@ -13,13 +13,14 @@ namespace Esercizio_Videogioco
         private List<Categoria> _categorieArmi;
         private string _id;
         private double _lp;
+        private string _imgPath;
 
         public Razza()
         {
             _categorieArmi = new List<Categoria>();
         }
 
-        public Razza(string id, string nome, List<Categoria> cat, double lp)
+        public Razza(string id, string nome, List<Categoria> cat, double lp, string imgPath)
         {
             try
             {
@@ -27,6 +28,7 @@ namespace Esercizio_Videogioco
                 Nome = nome;
                 CategorieArmi = cat;
                 LifePoints = lp;
+                ImgPath = imgPath;
             }
             catch (Exception ex)
             {
@@ -46,6 +48,20 @@ namespace Esercizio_Videogioco
                 _categorieArmi = value;
             }
         }
+
+        [XmlElement(ElementName = "ImgPath")]
+        public string ImgPath
+        {
+            get
+            {
+                return _imgPath;
+            }
+            set
+            {
+                _imgPath = value;
+            }
+        }
+
         [XmlAttribute(AttributeName = "ID")]
         public string ID
         {

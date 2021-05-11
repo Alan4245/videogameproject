@@ -14,7 +14,7 @@
         <Label Content="Razza" HorizontalAlignment="Left" Height="25" Margin="200,25,0,0" VerticalAlignment="Top" Width="65"/>
         <TextBox x:Name="inputRazzaID" HorizontalAlignment="Left" Height="35" Margin="165,70,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="inputRazzaNOME" HorizontalAlignment="Left" Height="35" Margin="165,115,0,0" TextWrapping="Wrap" Text="NOME" VerticalAlignment="Top" Width="110"/>
-        <Button x:Name="btnRazza" Content="ADD" HorizontalAlignment="Left" Height="35" Margin="165,220,0,0" VerticalAlignment="Top" Width="110" Click="btnRazza_Click"/>
+        <Button x:Name="btnRazza" Content="ADD" HorizontalAlignment="Left" Height="35" Margin="165,280,0,0" VerticalAlignment="Top" Width="110" Click="btnRazza_Click"/>
         <Label Content="Arma" HorizontalAlignment="Left" Height="25" Margin="400,25,0,0" VerticalAlignment="Top" Width="65"/>
         <TextBox x:Name="inputArmaDESCRIZIONE" HorizontalAlignment="Left" Height="35" Margin="360,65,0,0" TextWrapping="Wrap" Text="Descrizione" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="inputArmaNOME" HorizontalAlignment="Left" Height="35" Margin="360,115,0,0" TextWrapping="Wrap" Text="NOME" VerticalAlignment="Top" Width="110"/>
@@ -23,7 +23,9 @@
         <TextBox x:Name="inputArmaPUNTIDANNO" HorizontalAlignment="Left" Height="35" Margin="360,165,0,0" TextWrapping="Wrap" Text="Punti Danno" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="inputArmaEXP" HorizontalAlignment="Left" Height="35" Margin="360,210,0,0" TextWrapping="Wrap" Text="EXP NECESSARIA" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="inputArmaMONETE" HorizontalAlignment="Left" Height="35" Margin="360,255,0,0" TextWrapping="Wrap" Text="COSTO IN DENARO" VerticalAlignment="Top" Width="110"/>
-        <Button x:Name="btnArma" Content="ADD" HorizontalAlignment="Left" Height="30" Margin="360,305,0,0" VerticalAlignment="Top" Width="110" Click="btnArma_Click"/>
+        <Button x:Name="btnArma" Content="ADD" HorizontalAlignment="Left" Height="30" Margin="360,345,0,0" VerticalAlignment="Top" Width="110" Click="btnArma_Click"/>
+        <TextBox x:Name="inputRazzaIMG" HorizontalAlignment="Left" Height="35" Margin="165,215,0,0" TextWrapping="Wrap" Text="IMG PATH.SOS" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="inputArmaIMG" HorizontalAlignment="Left" Height="35" Margin="360,300,0,0" TextWrapping="Wrap" Text="IMG PATH.SOS" VerticalAlignment="Top" Width="110"/>
 
     </Grid>
 </Window>

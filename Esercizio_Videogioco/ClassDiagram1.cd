@@ -23,7 +23,7 @@
   <Class Name="Esercizio_Videogioco.Razza">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACIAAAAQAAgAAAgABAAAAAAAAAAAACQAAAAAEAAAA=</HashCode>
+      <HashCode>AAACIAAAAQAAgAAAgABAAAIAAAAAAAACQCAAAAEAAAA=</HashCode>
       <FileName>Razza.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -46,8 +46,6 @@
         <Point X="1.25" Y="5.67" />
         <Point X="2.008" Y="5.67" />
         <Point X="2.008" Y="4.057" />
-        <Point X="4.917" Y="4.057" Type="JumpStart" />
-        <Point X="5.083" Y="4.057" Type="JumpEnd" />
         <Point X="7" Y="4.057" />
       </Path>
     </AssociationLine>
@@ -65,7 +63,7 @@
   <Class Name="Esercizio_Videogioco.Negozio">
     <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAEAAAAAIAIAAAEAAAAAAAAAAAAAAAAAAEAIA=</HashCode>
+      <HashCode>AAgAAACAEAAEAAIAIAAAEAAAAAAAAAAAAAAAAAQEAIA=</HashCode>
       <FileName>Negozio.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

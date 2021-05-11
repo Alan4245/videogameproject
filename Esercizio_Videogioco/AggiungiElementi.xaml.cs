@@ -43,12 +43,13 @@ namespace Esercizio_Videogioco
             string id = inputRazzaID.Text;
             string nome = inputRazzaNOME.Text;
             double lp = double.Parse(inputRazzaLP.Text);
+            string path = inputRazzaIMG.Text;
             List<Categoria> categorieRazza = new List<Categoria>();
             foreach(Categoria cat in videogiocolocale.Categorie)
             {
                 categorieRazza.Add(cat);
             }
-            Razza nuovaRazza = new Razza(id, nome, categorieRazza, lp);
+            Razza nuovaRazza = new Razza(id, nome, categorieRazza, lp, path);
             videogiocolocale.AggiungiRazza(nuovaRazza);
         }
 
@@ -60,11 +61,12 @@ namespace Esercizio_Videogioco
             double puntiDanno = double.Parse(inputArmaPUNTIDANNO.Text);
             int expSblocco = int.Parse(inputArmaEXP.Text);
             int costoDenaro = int.Parse(inputArmaMONETE.Text);
+            string path = inputArmaIMG.Text;
             Random r = new Random();
             int k = videogiocolocale.Categorie.Count;
             k = r.Next(0, k);
             Categoria cat = videogiocolocale.Categorie.ElementAt<Categoria>(k);
-            Arma nuovaArma = new Arma(descrizione, nome, puntiDanno, cat, expSblocco, costoDenaro);
+            Arma nuovaArma = new Arma(descrizione, nome, puntiDanno, cat, expSblocco, costoDenaro, path);
             videogiocolocale.AggiungiArma(nuovaArma);
 
         }
