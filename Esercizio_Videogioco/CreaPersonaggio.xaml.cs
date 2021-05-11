@@ -65,7 +65,23 @@ namespace Esercizio_Videogioco
 
         private void Combo_Tipo_Personaggio_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //Andrebbe cambiata l'immagine
+            if(Combo_Tipo_Personaggio.SelectedIndex >= 0)
+            {
+                try
+                {
+                    Razza razzaCorrente = v.Razze[Combo_Tipo_Personaggio.SelectedIndex];
+                    Uri uriImg = new Uri(razzaCorrente.ImgPath, UriKind.Relative);
+                    ImageSource img = new BitmapImage(uriImg);
+                    Img_Personaggio.Source = img;
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("Impossibile visionare l'anteprima: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Impossibile vedere l'anteprima");
+            }
         }
 
         public void Serializza()
