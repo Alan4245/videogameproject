@@ -181,10 +181,10 @@
   <Armi Nome="Mano">
     <Descrizione>È una mano.</Descrizione>
     <ImgPath>imgarmi/ArmaMano.png</ImgPath>
-    <PuntiDanno>1</PuntiDanno>
-    <CategorieArmi ID="C3">
-        <Nome>Leggere</Nome>
-      </CategorieArmi>
+    <PuntiDanno>5</PuntiDanno>
+	<Categoria ID="C3">
+    <Nome>Leggere</Nome>
+  </Categoria>
     <ExpRichiesta>0</ExpRichiesta>
     <MoneteRichieste>0</MoneteRichieste>
   </Armi>
@@ -192,9 +192,9 @@
     <Descrizione>Una lama molto affilata che fa male.</Descrizione>
     <ImgPath>imgarmi/ArmaSpada.png</ImgPath>
     <PuntiDanno>20</PuntiDanno>
-    <CategorieArmi ID="C3">
-        <Nome>Leggere</Nome>
-      </CategorieArmi>
+	<Categoria ID="C3">
+    <Nome>Leggere</Nome>
+  </Categoria>
     <ExpRichiesta>5</ExpRichiesta>
     <MoneteRichieste>50</MoneteRichieste>
   </Armi>
@@ -202,9 +202,9 @@
     <Descrizione>Questo attrezzo è costituito da: una lama in ferro, ricurva e con il taglio perpendicolare al manico e in questa configurazione generica ha una forte somiglianza con la zappa.</Descrizione>
     <ImgPath>imgarmi/ArmaAscia.png</ImgPath>
     <PuntiDanno>25</PuntiDanno>
-    <CategorieArmi ID="B2">
-        <Nome>Pesante</Nome>
-      </CategorieArmi>
+	<Categoria ID="B2">
+    <Nome>Pesante</Nome>
+  </Categoria>
     <ExpRichiesta>200</ExpRichiesta>
     <MoneteRichieste>100</MoneteRichieste>
   </Armi>
@@ -212,9 +212,9 @@
     <Descrizione>I bastoni magici, non sono usati solo come strumento dell'arte ma anche come un vero e proprio oggetto divinatorio, in alcuni casi i maghi o le streghe più esperte incastonano si di un ramo abbastanza grande una sfera di Cristallo di Rocca, appunto per poterne usare l'energia e incanalarla sulla sfera.</Descrizione>
     <ImgPath>imgarmi/ArmaBastone.png</ImgPath>
     <PuntiDanno>50</PuntiDanno>
-    <CategorieArmi ID="D4">
-        <Nome>Magica</Nome>
-      </CategorieArmi>
+	<Categoria ID="D4">
+    <Nome>Magica</Nome>
+  </Categoria>
     <ExpRichiesta>450</ExpRichiesta>
     <MoneteRichieste>250</MoneteRichieste>
   </Armi>
@@ -222,9 +222,9 @@
     <Descrizione>Bazooka Tipo di lanciarazzi anticarro, introdotto nella Seconda guerra mondiale nell'armamento dell'esercito degli USA ma noi abbiamo solo quello di Fortnite</Descrizione>
     <ImgPath>imgarmi/ArmaBazooka.png</ImgPath>
     <PuntiDanno>104</PuntiDanno>
-    <CategorieArmi ID="A1">
-      <Nome>Fuoco</Nome>
-    </CategorieArmi>
+	<Categoria ID="A1">
+    <Nome>Fuoco</Nome>
+  </Categoria>
     <ExpRichiesta>1000</ExpRichiesta>
     <MoneteRichieste>504</MoneteRichieste>
   </Armi>
@@ -232,9 +232,9 @@
     <Descrizione>Il macete o machete è un'arma da taglio metallica, con impugnatura e lama dritta a un solo taglio. Gli assassini con poca esperienza lo ameranno..</Descrizione>
     <ImgPath>imgarmi/ArmaMachete.png</ImgPath>
     <PuntiDanno>30</PuntiDanno>
-    <CategorieArmi ID="C3">
-        <Nome>Leggere</Nome>
-      </CategorieArmi>
+	<Categoria ID="C3">
+    <Nome>Leggere</Nome>
+  </Categoria>
     <ExpRichiesta>150</ExpRichiesta>
     <MoneteRichieste>75</MoneteRichieste>
   </Armi>
@@ -242,9 +242,9 @@
     <Descrizione>La motosega è essenzialmente una macchina portatile portata dall'operatore ad entrambe le impugnature azionata da un motore a scoppio di piccola cilindrata funzionante a miscela olio/benzina.</Descrizione>
     <ImgPath>imgarmi/ArmaMotosega.png</ImgPath>
     <PuntiDanno>75</PuntiDanno>
-    <CategorieArmi ID="A1">
+	<Categoria ID="A1">
     <Nome>Fuoco</Nome>
-  </CategorieArmi>
+  </Categoria>
     <ExpRichiesta>750</ExpRichiesta>
     <MoneteRichieste>350</MoneteRichieste>
   </Armi>
@@ -252,9 +252,9 @@
     <Descrizione>Mazzafrusto da cavallo. Arma da botta articolata ad alto potere di impatto, in uso soprattutto in Europa centrale tra il XII e il XV secolo.</Descrizione>
     <ImgPath>imgarmi/ArmaPalla.png</ImgPath>
     <PuntiDanno>55</PuntiDanno>
-    <CategorieArmi ID="B2">
-        <Nome>Pesante</Nome>
-      </CategorieArmi>
+	<Categoria ID="B2">
+    <Nome>Pesante</Nome>
+  </Categoria>
     <ExpRichiesta>400</ExpRichiesta>
     <MoneteRichieste>111</MoneteRichieste>
   </Armi>
@@ -262,9 +262,9 @@
     <Descrizione>Rientra nella categoria delle cosiddette armi da fuoco "corte", che sono state inizialmente concepite per essere impugnate con una sola mano. Amata dai trapper.</Descrizione>
     <ImgPath>imgarmi/ArmaPistola.png</ImgPath>
     <PuntiDanno>65</PuntiDanno>
-    <CategorieArmi ID="A1">
+	<Categoria ID="A1">
     <Nome>Fuoco</Nome>
-  </CategorieArmi>
+  </Categoria>
     <ExpRichiesta>650</ExpRichiesta>
     <MoneteRichieste>200</MoneteRichieste>
   </Armi>
