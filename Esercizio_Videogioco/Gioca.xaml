@@ -11,7 +11,7 @@
         <Image Margin="316,128,317,130" Source="kisspng-mortal-kombat-vs-dc-universe-injustice-2-shao-kah-5b18f953490ca6.0824107615283633472992 (1).png" Stretch="Fill"/>
         <Image x:Name="Img_Personaggio1" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="159" Margin="67,78,0,0"/>
         <Image x:Name="Img_Personaggio2" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="159" Margin="568,78,0,0"/>
-        <ComboBox x:Name="ComboSfondo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="316,23,0,0" Height="28">
+        <ComboBox x:Name="ComboSfondo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="355" Margin="220,23,0,0" Height="28" SelectionChanged="ComboSfondo_SelectionChanged">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -19,7 +19,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <ComboBox x:Name="Combo_Personaggio1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="67,331,0,0">
+        <ComboBox x:Name="Combo_Personaggio1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="67,331,0,0" SelectionChanged="Combo_Personaggio1_SelectionChanged">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -35,7 +35,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <ComboBox x:Name="Combo_Personaggio2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="568,331,0,0">
+        <ComboBox x:Name="Combo_Personaggio2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="568,331,0,0" SelectionChanged="Combo_Personaggio2_SelectionChanged">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>

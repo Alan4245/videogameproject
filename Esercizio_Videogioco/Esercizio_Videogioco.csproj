@@ -176,7 +176,16 @@
     <Resource Include="imgrazze\RwondoNoArma.png" />
     <Resource Include="imgrazze\ZombieNoArma.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="imgsfondi\Sfondo7Zone.png" />
+    <Resource Include="imgsfondi\SfondoCimitero.jpg" />
+    <Resource Include="imgsfondi\SfondoDino.jpg" />
+    <Resource Include="imgsfondi\SfondoGigante.jpg" />
+    <Resource Include="imgsfondi\SfondoMago.jpg" />
+    <Resource Include="imgsfondi\SfondoNormale.jpg" />
+    <Resource Include="imgsfondi\SfondoOrco.jpg" />
+    <Resource Include="imgsfondi\SfondoPokemon.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="imgarmi\ArmaAscia.png" />
     <Resource Include="imgarmi\ArmaBastone.png" />

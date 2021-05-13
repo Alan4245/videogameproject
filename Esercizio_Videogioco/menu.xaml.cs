@@ -87,5 +87,14 @@ namespace Esercizio_Videogioco
             schermatanegozio.Show();
             this.Close();
         }
+
+        private void Btn_Gioca_Click(object sender, RoutedEventArgs e)
+        {
+
+            Gioca schermataGioca = new Gioca(videogiocolocale);
+            schermataGioca.Show();
+            this.Close();
+
+        }
     }
 }

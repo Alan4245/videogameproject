@@ -8,7 +8,7 @@
         Title="menu" Height="450" Width="800">
     <Grid>
         <Image Source="417839.jpg" Stretch="Fill"/>
-        <Button x:Name="Btn_Gioca" Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,48,0,0" FontSize="24" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Button x:Name="Btn_Gioca" Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,48,0,0" FontSize="24" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS" Click="Btn_Gioca_Click"/>
         <Button x:Name="Btn_Negozio" Content="Negozio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,122,0,0" FontSize="24" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS" Click="Btn_Negozio_Click"/>
         <Button x:Name="Btn_CreaPersonaggio" Content="Crea Personaggio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Height="48" Margin="10,345,0,0" FontSize="22" Background="#FF85F4FF" FontWeight="Bold" FontFamily="Comic Sans MS" Click="Btn_CreaPersonaggio_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="20" Margin="735,15,0,0" VerticalAlignment="Top" Width="45" Click="Button_Click"/>

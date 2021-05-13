@@ -8,14 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armaascia.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armabastone.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armabazooka.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armamachete.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armamano.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armamotosega.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armapalla.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armapistola.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armaspada.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondo7zone.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondocimitero.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondodino.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondogigante.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondomago.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondonormale.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondoorco.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsfondi/sfondopokemon.jpg")]
 
 
