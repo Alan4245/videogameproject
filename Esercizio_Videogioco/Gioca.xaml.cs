@@ -104,26 +104,30 @@ namespace Esercizio_Videogioco
 
         private void Combo_Personaggio1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Uri _uriImgLocale;
+            ImageSource _imgLocale;
             Personaggio p = Combo_Personaggio1.SelectedItem as Personaggio;
             foreach (Arma arma in p.Armi)
             {
                 Combo_Arma_Personaggio1.Items.Add(arma);
             }
-            _uriImg = new Uri(p.Razza.ImgPath, UriKind.Relative);
-            _img = new BitmapImage(_uriImg);
-            Img_Personaggio1.Source = _img;
+            _uriImgLocale = new Uri(p.Razza.ImgPath, UriKind.Relative);
+            _imgLocale = new BitmapImage(_uriImgLocale);
+            Img_Personaggio1.Source = _imgLocale;
         }
 
         private void Combo_Personaggio2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Uri _uriImgLocale;
+            ImageSource _imgLocale;
             Personaggio p = Combo_Personaggio2.SelectedItem as Personaggio;
             foreach (Arma arma in p.Armi)
             {
                 Combo_Arma_Personaggio2.Items.Add(arma);
             }
-            _uriImg = new Uri(p.Razza.ImgPath, UriKind.Relative);
-            _img = new BitmapImage(_uriImg);
-            Img_Personaggio2.Source = _img;
+            _uriImgLocale = new Uri(p.Razza.ImgPath, UriKind.Relative);
+            _imgLocale = new BitmapImage(_uriImgLocale);
+            Img_Personaggio2.Source = _imgLocale;
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)

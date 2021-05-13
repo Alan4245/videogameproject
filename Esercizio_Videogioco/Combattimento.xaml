@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Combattimento" Height="450" Width="800">
     <Grid>
-        <Image x:Name="Sfondo" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792"/>
+        <Image x:Name="Sfondo" HorizontalAlignment="Left" Height="570" VerticalAlignment="Top" Width="965" Margin="0,0,-173,-151"/>
         <Label x:Name="NomePersonaggio1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="181" Background="White"/>
         <Label x:Name="NomePersonaggio2" Content="" VerticalAlignment="Top" Height="29" Width="181" Margin="611,0,0,0" HorizontalAlignment="Left" Background="White"/>
         <ProgressBar x:Name="ProgressPersonaggio1" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="278" Margin="0,34,0,0"/>
