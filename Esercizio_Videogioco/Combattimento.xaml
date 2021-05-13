@@ -14,6 +14,7 @@
         <ProgressBar x:Name="ProgressPersonaggio2" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="278" Margin="514,34,0,0"/>
         <Image x:Name="ImgPersonaggio1" HorizontalAlignment="Left" Height="243" VerticalAlignment="Top" Width="149" Margin="32,166,0,0"/>
         <Image x:Name="ImgPersonaggio2" HorizontalAlignment="Left" Height="243" VerticalAlignment="Top" Width="149" Margin="611,166,0,0"/>
+        <Button x:Name="btn_INIZIA" Content="INIZIA" HorizontalAlignment="Left" Height="70" Margin="285,10,0,0" VerticalAlignment="Top" Width="220" Click="btn_INIZIA_Click"/>
 
 
     </Grid>

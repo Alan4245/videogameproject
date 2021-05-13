@@ -127,9 +127,9 @@
       <Arma Nome="Mano">
         <Descrizione>È una mano.</Descrizione>
         <ImgPath>imgarmi/ArmaMano.png</ImgPath>
-        <PuntiDanno>1</PuntiDanno>
-        <Categoria ID="B2">
-          <Nome>Pesante</Nome>
+        <PuntiDanno>5</PuntiDanno>
+        <Categoria ID="C3">
+          <Nome>Leggere</Nome>
         </Categoria>
         <ExpRichiesta>0</ExpRichiesta>
         <MoneteRichieste>0</MoneteRichieste>
@@ -155,7 +155,7 @@
     <SeComprato>false</SeComprato>
   </Personaggi>
   <Personaggi>
-    <Nome>Gargamella</Nome>
+    <Nome>Rwondo</Nome>
     <Exp>0</Exp>
     <Monete>0</Monete>
     <Armi>
@@ -170,7 +170,7 @@
         <MoneteRichieste>0</MoneteRichieste>
       </Arma>
     </Armi>
-    <Razza ID="G7">
+    <Razza ID="M11">
       <CategorieArmi ID="A1">
         <Nome>Fuoco</Nome>
       </CategorieArmi>
@@ -183,9 +183,9 @@
       <CategorieArmi ID="D4">
         <Nome>Magica</Nome>
       </CategorieArmi>
-      <ImgPath>imgrazze/MagoNoArma.png</ImgPath>
-      <Nome>Mago</Nome>
-      <LifePoints>250</LifePoints>
+      <ImgPath>imgrazze/RwondoNoArma.png</ImgPath>
+      <Nome>Trapper</Nome>
+      <LifePoints>569</LifePoints>
     </Razza>
     <SeComprato>false</SeComprato>
   </Personaggi>

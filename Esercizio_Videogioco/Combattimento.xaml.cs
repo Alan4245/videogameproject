@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Esercizio_Videogioco
 {
@@ -22,15 +23,45 @@ namespace Esercizio_Videogioco
         private Personaggio p11;
         private Personaggio p22;
         private Videogioco _videogiocolocale;
+        private Uri _uriImg;
+        private Uri _uriImg2;
+        private ImageSource _img;
+        private ImageSource _img2;
         public Combattimento(Personaggio p1, Personaggio p2, Arma arma1, Arma arma2, ImageSource imgSfondo, Videogioco videogioco)
         {
             InitializeComponent();
             p11 = p1;
             p22 = p2;
+            NomePersonaggio1.Content = p11.Nome;
+            NomePersonaggio2.Content = p22.Nome;
+            _uriImg = new Uri(p1.Razza.ImgPath, UriKind.Relative);
+            _img = new BitmapImage(_uriImg);
+            _uriImg2 = new Uri(p2.Razza.ImgPath, UriKind.Relative);
+            _img2 = new BitmapImage(_uriImg);
+            ImgPersonaggio1.Source = _img;
+            ImgPersonaggio2.Source = _img2;
+            Sfondo.Source = imgSfondo;
+        }
+
+        public void SostituisciPersonaggio(Personaggio personaggio)
+        {
+            foreach(Personaggio p in _videogiocolocale.Personaggi)
+            {
+                if (p.Nome == personaggio.Nome)
+                {
+                    p.Exp = personaggio.Exp;
+                    p.Monete = personaggio.Monete;
+                }
+                    
+            }
+        }
+
+        private void btn_INIZIA_Click(object sender, RoutedEventArgs e)
+        {
 
             Combattimentoclass classeCombattimento = new Combattimentoclass(ref p11, ref p22, arma1, arma2);
             classeCombattimento.AssegnaVittoria();
-            if(p11.Nome == classeCombattimento.Vincitore.Nome)
+            if (p11.Nome == classeCombattimento.Vincitore.Nome)
             {
                 p11.Exp += classeCombattimento.AssegnaExp(true);
                 p22.Exp += classeCombattimento.AssegnaExp(false);
@@ -47,19 +78,7 @@ namespace Esercizio_Videogioco
             }
 
             MessageBox.Show("Il vincitore è " + classeCombattimento.Vincitore.Nome);
-        }
 
-        public void SostituisciPersonaggio(Personaggio personaggio)
-        {
-            foreach(Personaggio p in _videogiocolocale.Personaggi)
-            {
-                if (p.Nome == personaggio.Nome)
-                {
-                    p.Exp = personaggio.Exp;
-                    p.Monete = personaggio.Monete;
-                }
-                    
-            }
         }
     }
 }
