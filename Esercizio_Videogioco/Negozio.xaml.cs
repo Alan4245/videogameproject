@@ -76,7 +76,7 @@ namespace Esercizio_Videogioco
                 Personaggio p = ComboPersonaggio.SelectedItem as Personaggio;
                 Arma arma = ComboArma.SelectedItem as Arma;
                 NomeArma.Content = arma.Nome;
-                Descrizione.Content = arma.Descrizione;
+                Descrizione.Text = arma.Descrizione;
                 Uri uriImg = new Uri(arma.ImgPath, UriKind.Relative);
                 ImageSource img = new BitmapImage(uriImg);
                 Img_Arma.Source = img;
