@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Gioca" Height="450" Width="800">
     <Grid>
-        <Image x:Name="Img_Sfondo" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792"/>
+        <Image x:Name="Img_Sfondo" HorizontalAlignment="Left" Height="635" VerticalAlignment="Top" Width="1070" Margin="0,0,-278,-216"/>
         <Image Margin="316,128,317,130" Source="kisspng-mortal-kombat-vs-dc-universe-injustice-2-shao-kah-5b18f953490ca6.0824107615283633472992 (1).png" Stretch="Fill"/>
         <Image x:Name="Img_Personaggio1" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="159" Margin="67,78,0,0"/>
         <Image x:Name="Img_Personaggio2" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="159" Margin="568,78,0,0"/>
@@ -51,7 +51,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Button Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="231" Margin="288,331,0,0" Height="64" Background="#FFFFDC00" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="22"/>
+        <Button Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="231" Margin="288,331,0,0" Height="64" Background="#FFFFDC00" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="22" Click="Button_Click"/>
+        <Button x:Name="btnExit" Content="TORNA AL MENU" HorizontalAlignment="Left" Height="40" Margin="15,15,0,0" VerticalAlignment="Top" Width="140" Click="btnExit_Click"/>
 
     </Grid>
 </Window>
