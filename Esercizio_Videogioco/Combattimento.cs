@@ -56,13 +56,13 @@ namespace Esercizio_Videogioco
             }
         }
 
-        private Personaggio Vincitore
+        public Personaggio Vincitore
         {
             get
             {
                 return _vincitore;
             }
-            set
+            private set
             {
                 _vincitore = value;
             }
@@ -113,10 +113,10 @@ namespace Esercizio_Videogioco
                 throw new Exception("Pareggio");
         }
 
-        public int AssegnaExp()
+        public int AssegnaExp(bool vincitore)
         {
             int xp = 0;
-            if (Vincitore == Personaggio1)
+            if (vincitore)
             {
                 xp = (int)(10 + (Personaggio2.Razza.LifePoints - Arma1.PuntiDanno));
             }
@@ -127,9 +127,14 @@ namespace Esercizio_Videogioco
             return xp;
         }
 
-        public int AssegnaDenaro()
+        public int AssegnaDenaro(bool vincitore)
         {
-            return 10;
+            if (vincitore)
+            {
+                return 20;
+            }
+            else
+                return 10;
         }
     }
 }
