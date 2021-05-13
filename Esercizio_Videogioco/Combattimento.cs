@@ -118,11 +118,11 @@ namespace Esercizio_Videogioco
             int xp = 0;
             if (vincitore)
             {
-                xp = (int)(10 + (Personaggio2.Razza.LifePoints - Arma1.PuntiDanno));
+                xp = (int)(10 + (Personaggio2.Razza.LifePoints / 10));
             }
             else
             {
-                xp = (int)(10 + (Personaggio1.Razza.LifePoints - Arma2.PuntiDanno));
+                xp = (int)(10 + (Personaggio1.Razza.LifePoints / 10));
             }
             return xp;
         }
