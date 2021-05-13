@@ -8,13 +8,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/dinonoarma.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/gigantenoarma.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/magonoarma.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/orconoarma.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/personanormalissimanoarma.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/pikachunoarma.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/rwondonoarma.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/zombienoarma.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armaascia.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armabastone.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armabazooka.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armamachete.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armamano.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armamotosega.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armapalla.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armapistola.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgarmi/armaspada.png")]
 
 

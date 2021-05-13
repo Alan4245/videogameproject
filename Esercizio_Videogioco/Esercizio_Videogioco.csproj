@@ -176,5 +176,17 @@
     <Resource Include="imgrazze\RwondoNoArma.png" />
     <Resource Include="imgrazze\ZombieNoArma.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="imgarmi\ArmaAscia.png" />
+    <Resource Include="imgarmi\ArmaBastone.png" />
+    <Resource Include="imgarmi\ArmaBazooka.png" />
+    <Resource Include="imgarmi\ArmaMachete.png" />
+    <Resource Include="imgarmi\ArmaMano.png" />
+    <Resource Include="imgarmi\ArmaMotosega.png" />
+    <Resource Include="imgarmi\ArmaPalla.png" />
+    <Resource Include="imgarmi\ArmaPistola.png" />
+    <Resource Include="imgarmi\ArmaSpada.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
