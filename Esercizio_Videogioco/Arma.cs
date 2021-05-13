@@ -26,6 +26,7 @@ namespace Esercizio_Videogioco
             Categoria = categoria;
             ExpRichiesta = expRichiesta;
             MoneteRichieste = moneteRichieste;
+            ImgPath = imgPath;
             _id = Guid.NewGuid();
         }
 

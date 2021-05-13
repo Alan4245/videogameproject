@@ -14,7 +14,7 @@
         <ProgressBar x:Name="ProgressLivello" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="199" Margin="26,202,0,0" Foreground="#FF00FFAE"/>
         <Label x:Name="Livello" Content="" HorizontalAlignment="Left" Margin="240,200,0,0" VerticalAlignment="Top" Width="73" Background="White" Height="25" RenderTransformOrigin="0.466,0.431"/>
         <Label x:Name="Soldi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,160,0,0" Height="25" Width="139" Background="White"/>
-        <Image HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="132" Margin="435,108,0,0" OpacityMask="White"/>
+        <Image x:Name="Img_Arma" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="132" Margin="435,108,0,0" OpacityMask="White"/>
         <Button x:Name="btnCompra" Content="Ottieni Arma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Margin="615,265,0,0" Height="61" Click="btnCompra_Click"/>
         <Label x:Name="Descrizione" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="583,124,0,0" Height="128" Width="199" Background="White"/>
         <Label x:Name="NomeArma" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="435,46,0,0" Width="132" Background="White" Height="46"/>

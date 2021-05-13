@@ -77,6 +77,9 @@ namespace Esercizio_Videogioco
                 Arma arma = ComboArma.SelectedItem as Arma;
                 NomeArma.Content = arma.Nome;
                 Descrizione.Content = arma.Descrizione;
+                Uri uriImg = new Uri(arma.ImgPath, UriKind.Relative);
+                ImageSource img = new BitmapImage(uriImg);
+                Img_Arma.Source = img;
                 LivelloRichiesto.Content = "LVL. SBLOCCO: " + arma.ExpRichiesta / 100;
                 SoldiRichiesti.Content = "COSTO: " + arma.MoneteRichieste + " $";
                 btnCompra.IsEnabled = true;
