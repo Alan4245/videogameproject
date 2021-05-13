@@ -222,9 +222,9 @@
     <Descrizione>Bazooka Tipo di lanciarazzi anticarro, introdotto nella Seconda guerra mondiale nell'armamento dell'esercito degli USA ma noi abbiamo solo quello di Fortnite</Descrizione>
     <ImgPath>imgarmi/ArmaBazooka.png</ImgPath>
     <PuntiDanno>104</PuntiDanno>
-    <Categoria ID="A1">
+    <CategorieArmi ID="A1">
       <Nome>Fuoco</Nome>
-    </Categoria>
+    </CategorieArmi>
     <ExpRichiesta>1000</ExpRichiesta>
     <MoneteRichieste>504</MoneteRichieste>
   </Armi>
@@ -242,9 +242,9 @@
     <Descrizione>La motosega è essenzialmente una macchina portatile portata dall'operatore ad entrambe le impugnature azionata da un motore a scoppio di piccola cilindrata funzionante a miscela olio/benzina.</Descrizione>
     <ImgPath>imgarmi/ArmaMotosega.png</ImgPath>
     <PuntiDanno>75</PuntiDanno>
-    <Categorie ID="A1">
+    <CategorieArmi ID="A1">
     <Nome>Fuoco</Nome>
-  </Categorie>
+  </CategorieArmi>
     <ExpRichiesta>750</ExpRichiesta>
     <MoneteRichieste>350</MoneteRichieste>
   </Armi>
@@ -262,9 +262,9 @@
     <Descrizione>Rientra nella categoria delle cosiddette armi da fuoco "corte", che sono state inizialmente concepite per essere impugnate con una sola mano. Amata dai trapper.</Descrizione>
     <ImgPath>imgarmi/ArmaPistola.png</ImgPath>
     <PuntiDanno>65</PuntiDanno>
-    <Categorie ID="A1">
+    <CategorieArmi ID="A1">
     <Nome>Fuoco</Nome>
-  </Categorie>
+  </CategorieArmi>
     <ExpRichiesta>650</ExpRichiesta>
     <MoneteRichieste>200</MoneteRichieste>
   </Armi>
