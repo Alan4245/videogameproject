@@ -45,6 +45,8 @@ namespace Esercizio_Videogioco
                 p11.Monete += classeCombattimento.AssegnaDenaro(false);
                 p22.Monete += classeCombattimento.AssegnaDenaro(true);
             }
+
+            MessageBox.Show("Il vincitore è " + classeCombattimento.Vincitore.Nome);
         }
 
         public void SostituisciPersonaggio(Personaggio personaggio)

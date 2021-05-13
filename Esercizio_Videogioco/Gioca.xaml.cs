@@ -162,18 +162,29 @@ namespace Esercizio_Videogioco
 
             if(Combo_Personaggio1.SelectedIndex >= 0 && Combo_Personaggio2.SelectedIndex >= 0)
             {
-                Personaggio p1 = Combo_Personaggio1.SelectedItem as Personaggio;
-                Personaggio p2 = Combo_Personaggio2.SelectedItem as Personaggio;
-                if (p1.Nome != p2.Nome)
-                    personaggiDiversi = true;
-
-                if (sfondoSelezionato && personaggioUnoSelezionato && personaggioDueSelezionato && armaPersonaggioUnoSelezionato && armaPersonaggioDueSelezionato && personaggiDiversi)
+                if(Combo_Arma_Personaggio1.SelectedIndex>=0 && Combo_Arma_Personaggio2.SelectedIndex >= 0)
                 {
-                    //schermata combattimento
+                    Personaggio p1 = Combo_Personaggio1.SelectedItem as Personaggio;
+                    Personaggio p2 = Combo_Personaggio2.SelectedItem as Personaggio;
+                    Arma arma1 = Combo_Arma_Personaggio1.SelectedItem as Arma;
+                    Arma arma2 = Combo_Arma_Personaggio2.SelectedItem as Arma;
+                    if (p1.Nome != p2.Nome)
+                        personaggiDiversi = true;
+
+                    if (sfondoSelezionato && personaggioUnoSelezionato && personaggioDueSelezionato && armaPersonaggioUnoSelezionato && armaPersonaggioDueSelezionato && personaggiDiversi)
+                    {
+                        Combattimento schermataCombattimento = new Combattimento(p1, p2, arma1, arma2, _img, _videogiocolocale);
+                        schermataCombattimento.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ricordati di selezionare uno sfondo, due personaggi (non uguali) e un'arma rispettiva a ciascuno.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Ricordati di selezionare uno sfondo, due personaggi (non uguali) e un'arma rispettiva a ciascuno.");
+                    MessageBox.Show("Seleziona quelle armi.");
                 }
             }
             else
