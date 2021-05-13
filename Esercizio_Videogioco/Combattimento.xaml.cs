@@ -46,6 +46,7 @@ namespace Esercizio_Videogioco
             ImgPersonaggio1.Source = _img;
             ImgPersonaggio2.Source = _img2;
             Sfondo.Source = imgSfondo;
+            _videogiocolocale = videogioco;
         }
 
         public void SostituisciPersonaggio(Personaggio personaggio)
