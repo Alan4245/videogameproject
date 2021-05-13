@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using System.Xml.Serialization;
 
 namespace Esercizio_Videogioco
 {
@@ -83,7 +84,19 @@ namespace Esercizio_Videogioco
 
             MessageBox.Show("Il vincitore è " + classeCombattimento.Vincitore.Nome);
 
+            SostituisciPersonaggio(p11);
+            SostituisciPersonaggio(p22);
+            Serializza();
+            menu schermataMenu = new menu(_videogiocolocale);
+            schermataMenu.Show();
+            this.Close();
+        }
 
+        public void Serializza()
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Videogioco));
+            TextWriter writer = new StreamWriter("videogioco.xml");
+            serializer.Serialize(writer, _videogiocolocale);
 
         }
     }
