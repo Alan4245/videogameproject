@@ -32,7 +32,7 @@ namespace Esercizio_Videogioco
 
         public void Inizializza()
         {
-            foreach(Personaggio p in _videogiocolocale.Personaggi)
+            foreach (Personaggio p in _videogiocolocale.Personaggi)
             {
                 Combo_Personaggio1.Items.Add(p);
                 Combo_Personaggio2.Items.Add(p);
@@ -54,7 +54,8 @@ namespace Esercizio_Videogioco
 
             switch (ComboSfondo.SelectedIndex)
             {
-                case 0: _uriImg = new Uri("imgsfondi/Sfondo7Zone.png", UriKind.Relative);
+                case 0:
+                    _uriImg = new Uri("imgsfondi/Sfondo7Zone.png", UriKind.Relative);
                     _img = new BitmapImage(_uriImg);
                     Img_Sfondo.Source = _img;
                     break;
@@ -104,6 +105,7 @@ namespace Esercizio_Videogioco
 
         private void Combo_Personaggio1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Combo_Arma_Personaggio1.Items.Clear();
             Uri _uriImgLocale;
             ImageSource _imgLocale;
             Personaggio p = Combo_Personaggio1.SelectedItem as Personaggio;
@@ -118,6 +120,7 @@ namespace Esercizio_Videogioco
 
         private void Combo_Personaggio2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Combo_Arma_Personaggio2.Items.Clear();
             Uri _uriImgLocale;
             ImageSource _imgLocale;
             Personaggio p = Combo_Personaggio2.SelectedItem as Personaggio;
@@ -164,9 +167,9 @@ namespace Esercizio_Videogioco
             if (Combo_Arma_Personaggio2.SelectedIndex >= 0)
                 armaPersonaggioDueSelezionato = true;
 
-            if(Combo_Personaggio1.SelectedIndex >= 0 && Combo_Personaggio2.SelectedIndex >= 0)
+            if (Combo_Personaggio1.SelectedIndex >= 0 && Combo_Personaggio2.SelectedIndex >= 0)
             {
-                if(Combo_Arma_Personaggio1.SelectedIndex>=0 && Combo_Arma_Personaggio2.SelectedIndex >= 0)
+                if (Combo_Arma_Personaggio1.SelectedIndex >= 0 && Combo_Arma_Personaggio2.SelectedIndex >= 0)
                 {
                     Personaggio p1 = Combo_Personaggio1.SelectedItem as Personaggio;
                     Personaggio p2 = Combo_Personaggio2.SelectedItem as Personaggio;

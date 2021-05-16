@@ -121,8 +121,8 @@
   </Razze>
   <Personaggi>
     <Nome>T-REX</Nome>
-    <Exp>205</Exp>
-    <Monete>10</Monete>
+    <Exp>265</Exp>
+    <Monete>30</Monete>
     <Armi>
       <Arma Nome="Mano">
         <Descrizione>È una mano.</Descrizione>
@@ -156,8 +156,8 @@
   </Personaggi>
   <Personaggi>
     <Nome>Rwondo</Nome>
-    <Exp>574</Exp>
-    <Monete>20</Monete>
+    <Exp>706</Exp>
+    <Monete>60</Monete>
     <Armi>
       <Arma Nome="Mano">
         <Descrizione>È una mano.</Descrizione>
@@ -186,6 +186,30 @@
       <ImgPath>imgrazze/RwondoNoArma.png</ImgPath>
       <Nome>Trapper</Nome>
       <LifePoints>569</LifePoints>
+    </Razza>
+    <SeComprato>false</SeComprato>
+  </Personaggi>
+  <Personaggi>
+    <Nome>Shrek</Nome>
+    <Exp>0</Exp>
+    <Monete>0</Monete>
+    <Armi />
+    <Razza ID="H8">
+      <CategorieArmi ID="A1">
+        <Nome>Fuoco</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="B2">
+        <Nome>Pesante</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="C3">
+        <Nome>Leggere</Nome>
+      </CategorieArmi>
+      <CategorieArmi ID="D4">
+        <Nome>Magica</Nome>
+      </CategorieArmi>
+      <ImgPath>imgrazze/OrcoNoArma.png</ImgPath>
+      <Nome>Orco</Nome>
+      <LifePoints>350</LifePoints>
     </Razza>
     <SeComprato>false</SeComprato>
   </Personaggi>

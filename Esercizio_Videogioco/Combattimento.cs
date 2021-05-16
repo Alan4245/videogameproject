@@ -99,7 +99,7 @@ namespace Esercizio_Videogioco
             double p1 = Personaggio1.Razza.LifePoints;
             double p2 = Personaggio2.Razza.LifePoints;
 
-            while (p1 <= 0 || p2 <= 0)
+            while (p1 > 0 && p2 > 0)
             {
                 p1 -= d2;
                 p2 -= d1;
@@ -110,7 +110,11 @@ namespace Esercizio_Videogioco
             else if (p1 > p2)
                 Vincitore = Personaggio1;
             else if (p1 == p2)
-                throw new Exception("Pareggio");
+            {
+                Vincitore = new Personaggio();
+                Vincitore.Nome = "Pareggio";
+            }
+
         }
 
         public int AssegnaExp(bool vincitore)

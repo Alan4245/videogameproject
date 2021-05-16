@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
 using System.Xml.Serialization;
+using System.Threading;
 
 namespace Esercizio_Videogioco
 {
@@ -30,9 +31,21 @@ namespace Esercizio_Videogioco
         private ImageSource _img2;
         private Arma arma11;
         private Arma arma22;
+
+        private int vita1;
+        private int vita2;
+        private Thread prog1;
+        private Thread prog2;
+        private Thread muoviPrimo;
+        private Thread muoviSecondo;
+        private int margine1 = 32;
+        private int margine2 = 611;
+        Combattimentoclass classeCombattimento;
+
         public Combattimento(Personaggio p1, Personaggio p2, Arma arma1, Arma arma2, ImageSource imgSfondo, Videogioco videogioco)
         {
             InitializeComponent();
+            btn_INIZIA.IsEnabled = true;
             p11 = p1;
             p22 = p2;
             arma11 = arma1;
@@ -47,25 +60,161 @@ namespace Esercizio_Videogioco
             ImgPersonaggio2.Source = _img2;
             Sfondo.Source = imgSfondo;
             _videogiocolocale = videogioco;
+
+            prog1 = new Thread(new ThreadStart(AbbassaBarra1));
+            prog2 = new Thread(new ThreadStart(AbbassaBarra2));
+            muoviPrimo = new Thread(new ThreadStart(Muovi1));
+            muoviSecondo = new Thread(new ThreadStart(Muovi2));
+            ImgPersonaggio1.Margin = new Thickness(margine1, 146, 0, 0);
+            ImgPersonaggio2.Margin = new Thickness(margine2, 146, 0, 0);
+            ImgPersonaggio1.Visibility = Visibility.Visible;
+            ImgPersonaggio2.Visibility = Visibility.Visible;
         }
 
         public void SostituisciPersonaggio(Personaggio personaggio)
         {
-            foreach(Personaggio p in _videogiocolocale.Personaggi)
+            foreach (Personaggio p in _videogiocolocale.Personaggi)
             {
                 if (p.Nome == personaggio.Nome)
                 {
                     p.Exp = personaggio.Exp;
                     p.Monete = personaggio.Monete;
                 }
-                    
+
             }
+        }
+
+        private void AbbassaBarra1()
+        {
+            muoviSecondo.Join();
+            muoviPrimo.Join();
+            this.Dispatcher.BeginInvoke(new Action(() =>
+            {
+
+                ProgressPersonaggio1.Value = 100;
+
+            }));
+
+            int v1 = 100;
+
+            while (v1 > vita1)
+            {
+                v1 -= 1;
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+
+                    ProgressPersonaggio1.Value = v1;
+
+                }));
+                Thread.Sleep(TimeSpan.FromMilliseconds(50));
+            }
+
+
+            if (Vincitore == classeCombattimento.Personaggio2.Nome)
+            {
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+
+                    ImgPersonaggio1.Visibility = Visibility.Hidden;
+
+                }));
+            }
+        }
+
+        private void AbbassaBarra2()
+        {
+            muoviSecondo.Join();
+            muoviPrimo.Join();
+            this.Dispatcher.BeginInvoke(new Action(() =>
+            {
+
+                ProgressPersonaggio2.Value = 100;
+
+
+            }));
+
+            int v2 = 100;
+
+            while (v2 > vita2)
+            {
+                v2 -= 1;
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+
+                    ProgressPersonaggio2.Value = v2;
+
+
+                }));
+                Thread.Sleep(TimeSpan.FromMilliseconds(50));
+            }
+            if (Vincitore == classeCombattimento.Personaggio1.Nome)
+            {
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+
+                    ImgPersonaggio2.Visibility = Visibility.Hidden;
+
+                }));
+            }
+        }
+
+
+
+        private void Muovi1()
+        {
+            int nuovo = margine1;
+            while (nuovo < 321)
+            {
+                nuovo += 1;
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+
+                    ImgPersonaggio1.Margin = new Thickness(nuovo, 146, 0, 0);
+
+                }));
+                Thread.Sleep(TimeSpan.FromMilliseconds(5));
+            }
+        }
+
+        private void Muovi2()
+        {
+            int nuovo = margine2;
+            while (nuovo > 321)
+            {
+                nuovo -= 1;
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+
+                    ImgPersonaggio2.Margin = new Thickness(nuovo, 146, 0, 0);
+
+                }));
+                Thread.Sleep(TimeSpan.FromMilliseconds(5));
+            }
+        }
+
+        private string Vincitore;
+
+        private void Concludi()
+        {
+            if (Vincitore == "Pareggio")
+                MessageBox.Show("È un pareggio");
+            else
+                MessageBox.Show("Il vincitore è " + Vincitore);
+
+            SostituisciPersonaggio(p11);
+            SostituisciPersonaggio(p22);
+            Serializza();
+            menu schermataMenu = new menu(_videogiocolocale);
+            schermataMenu.Show();
+            this.Close();
         }
 
         private void btn_INIZIA_Click(object sender, RoutedEventArgs e)
         {
+            btn_INIZIA.IsEnabled = false;
 
-            Combattimentoclass classeCombattimento = new Combattimentoclass(ref p11, ref p22, arma11, arma22);
+            classeCombattimento = new Combattimentoclass(ref p11, ref p22, arma11, arma22);
+
             classeCombattimento.AssegnaVittoria();
             if (p11.Nome == classeCombattimento.Vincitore.Nome)
             {
@@ -83,14 +232,40 @@ namespace Esercizio_Videogioco
                 p22.Monete += classeCombattimento.AssegnaDenaro(true);
             }
 
-            MessageBox.Show("Il vincitore è " + classeCombattimento.Vincitore.Nome);
+            double d1 = classeCombattimento.Arma1.PuntiDanno;
+            double d2 = classeCombattimento.Arma2.PuntiDanno;
+            double p1 = classeCombattimento.Personaggio1.Razza.LifePoints;
+            double p2 = classeCombattimento.Personaggio2.Razza.LifePoints;
 
-            SostituisciPersonaggio(p11);
-            SostituisciPersonaggio(p22);
-            Serializza();
-            menu schermataMenu = new menu(_videogiocolocale);
-            schermataMenu.Show();
-            this.Close();
+            while (p1 > 0 && p2 > 0)
+            {
+                p1 -= d2;
+                p2 -= d1;
+            }
+
+            if (p1 < 0)
+            {
+                p1 = 0;
+            }
+            if (p2 < 0)
+            {
+                p2 = 0;
+            }
+
+
+            vita1 = (int)((p1 * 100) / classeCombattimento.Personaggio1.Razza.LifePoints);
+            vita2 = (int)((p2 * 100) / classeCombattimento.Personaggio2.Razza.LifePoints);
+            Vincitore = classeCombattimento.Vincitore.Nome;
+
+            muoviPrimo.Start();
+            muoviSecondo.Start();
+
+            prog1.Start();
+            prog2.Start();
+
+
+
+            Concludi();
         }
 
         public void Serializza()
