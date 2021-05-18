@@ -26,6 +26,8 @@
                 <SolidColorBrush Color="White"/>
             </TextBlock.Background>
         </TextBlock>
+        <Label x:Name="lblPersonaggio" Content="Seleziona il personaggio:" HorizontalAlignment="Left" Height="25" Margin="25,225,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+        <Label x:Name="lblArma" Content="Seleziona l'arma:" HorizontalAlignment="Left" Height="25" Margin="25,275,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
 
     </Grid>
 </Window>

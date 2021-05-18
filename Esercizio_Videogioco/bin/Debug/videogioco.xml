@@ -121,8 +121,8 @@
   </Razze>
   <Personaggi>
     <Nome>T-REX</Nome>
-    <Exp>265</Exp>
-    <Monete>30</Monete>
+    <Exp>295</Exp>
+    <Monete>40</Monete>
     <Armi>
       <Arma Nome="Mano">
         <Descrizione>È una mano.</Descrizione>
@@ -156,8 +156,8 @@
   </Personaggi>
   <Personaggi>
     <Nome>Rwondo</Nome>
-    <Exp>706</Exp>
-    <Monete>60</Monete>
+    <Exp>772</Exp>
+    <Monete>80</Monete>
     <Armi>
       <Arma Nome="Mano">
         <Descrizione>È una mano.</Descrizione>
