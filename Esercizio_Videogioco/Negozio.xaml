@@ -8,26 +8,27 @@
         Title="Negozio" Height="450" Width="800">
     <Grid>
         <Image Source="30b248bebd0ba56a0f20907fe9613da9.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
-        <ComboBox x:Name="ComboPersonaggio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="26,249,0,0" Height="28" SelectionChanged="ComboPersonaggio_SelectionChanged"/>
-        <ComboBox x:Name="ComboArma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="26,299,0,0" Height="28" SelectionChanged="ComboArma_SelectionChanged"/>
-        <Label x:Name="NomePersonaggioScelto" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="139" Background="White" Margin="26,108,0,0"/>
-        <ProgressBar x:Name="ProgressLivello" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="199" Margin="26,202,0,0" Foreground="#FF00FFAE"/>
-        <Label x:Name="Livello" Content="" HorizontalAlignment="Left" Margin="240,200,0,0" VerticalAlignment="Top" Width="73" Background="White" Height="25" RenderTransformOrigin="0.466,0.431"/>
-        <Label x:Name="Soldi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,160,0,0" Height="25" Width="139" Background="White"/>
+        <ComboBox x:Name="ComboPersonaggio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="15,32,0,0" Height="28" SelectionChanged="ComboPersonaggio_SelectionChanged"/>
+        <ComboBox x:Name="ComboArma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Margin="15,207,0,0" Height="28" SelectionChanged="ComboArma_SelectionChanged"/>
+        <Label x:Name="NomePersonaggioScelto" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="139" Background="White" Margin="16,69,0,0"/>
+        <ProgressBar x:Name="ProgressLivello" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="199" Margin="16,107,0,0" Foreground="#FF00FFAE"/>
+        <Label x:Name="Livello" Content="" HorizontalAlignment="Left" Margin="227,105,0,0" VerticalAlignment="Top" Width="73" Background="White" Height="25" RenderTransformOrigin="0.466,0.431"/>
+        <Label x:Name="Soldi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="165,70,0,0" Height="25" Width="139" Background="White"/>
         <Button x:Name="btnCompra" Content="Ottieni Arma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Margin="610,310,0,0" Height="61" Click="btnCompra_Click"/>
         <Label x:Name="NomeArma" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="435,46,0,0" Width="132" Background="White" Height="46"/>
         <Label x:Name="LivelloRichiesto" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="583,46,0,0" Width="199" Background="White" RenderTransformOrigin="0.497,0.41"/>
         <Label x:Name="SoldiRichiesti" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="583,82,0,0" Width="199" Background="White"/>
-        <Button x:Name="btnExit" Content="TORNA AL MENU" HorizontalAlignment="Left" Height="40" Margin="265,375,0,0" VerticalAlignment="Top" Width="270" Click="btnExit_Click"/>
-        <Label x:Name="PercentualeProgressBar" Content="" HorizontalAlignment="Left" Height="25" Margin="105,200,0,0" VerticalAlignment="Top" Width="95"/>
+        <Button x:Name="btnExit" Content="TORNA AL MENU" HorizontalAlignment="Left" Height="40" Margin="15,370,0,0" VerticalAlignment="Top" Width="270" Click="btnExit_Click"/>
+        <Label x:Name="PercentualeProgressBar" Content="" HorizontalAlignment="Left" Height="25" Margin="85,105,0,0" VerticalAlignment="Top" Width="95"/>
         <Image x:Name="Img_Arma" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="132" Margin="435,108,0,0" OpacityMask="White"/>
         <TextBlock x:Name="Descrizione" HorizontalAlignment="Left" Height="175" Margin="575,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205">
             <TextBlock.Background>
                 <SolidColorBrush Color="White"/>
             </TextBlock.Background>
         </TextBlock>
-        <Label x:Name="lblPersonaggio" Content="Seleziona il personaggio:" HorizontalAlignment="Left" Height="25" Margin="25,225,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
-        <Label x:Name="lblArma" Content="Seleziona l'arma:" HorizontalAlignment="Left" Height="25" Margin="25,275,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+        <Label x:Name="lblPersonaggio" Content="Seleziona il personaggio:" HorizontalAlignment="Left" Height="25" Margin="15,5,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+        <Label x:Name="lblArma" Content="Seleziona l'arma:" HorizontalAlignment="Left" Height="25" Margin="15,175,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+        <Label x:Name="lblArma1" Content="Dati arma selezionata:" HorizontalAlignment="Left" Height="25" Margin="470,10,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
 
     </Grid>
 </Window>

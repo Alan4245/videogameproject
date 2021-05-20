@@ -16,11 +16,14 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <TextBox x:Name="txtNome" Text="Inserisci nome" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" Margin="28,136,0,0"/>
+        <TextBox x:Name="txtNome" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" Margin="25,155,0,0"/>
         <Button Content="CREA PERSONAGGIO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="28,294,0,0" Height="58" Background="#FFFF8000" FontFamily="Comic Sans MS" FontWeight="Bold" Click="Button_Click"/>
         <ListBox x:Name="lstAltriPersonaggi" HorizontalAlignment="Left" Height="261" VerticalAlignment="Top" Width="183" Margin="599,55,0,0"/>
         <Button x:Name="btnExit" Content="TORNA AL MENU" HorizontalAlignment="Left" Height="40" Margin="315,360,0,0" VerticalAlignment="Top" Width="180" Click="btnExit_Click"/>
         <Image x:Name="Img_Personaggio" HorizontalAlignment="Left" Height="265" Margin="280,60,0,0" VerticalAlignment="Top" Width="240"/>
+        <Label x:Name="lblRazza" Content="Seleziona la razza:" HorizontalAlignment="Left" Height="25" Margin="25,50,0,0" VerticalAlignment="Top" Width="160" Foreground="White"/>
+        <Label x:Name="lblNome" Content="Digita un nome:" HorizontalAlignment="Left" Height="25" Margin="25,125,0,0" VerticalAlignment="Top" Width="160" Foreground="White"/>
+        <Label x:Name="lblPersonaggi" Content="Lista Personaggi esistenti:" HorizontalAlignment="Left" Height="25" Margin="605,25,0,0" VerticalAlignment="Top" Width="160" Foreground="White"/>
 
     </Grid>
 </Window>

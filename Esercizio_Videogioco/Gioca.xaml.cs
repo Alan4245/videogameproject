@@ -51,7 +51,7 @@ namespace Esercizio_Videogioco
 
         private void ComboSfondo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            lblSfondo.Visibility = Visibility.Hidden;
             switch (ComboSfondo.SelectedIndex)
             {
                 case 0:

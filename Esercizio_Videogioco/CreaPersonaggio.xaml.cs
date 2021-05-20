@@ -50,6 +50,8 @@ namespace Esercizio_Videogioco
             {
                 if (Combo_Tipo_Personaggio.SelectedIndex < 0)
                     throw new Exception("Razza non selezionata");
+                if (string.IsNullOrWhiteSpace(txtNome.Text))
+                    throw new Exception("Il nome non è valido");
                 Personaggio p = new Personaggio(txtNome.Text, v.Razze[Combo_Tipo_Personaggio.SelectedIndex]);
                 v.AggiungiPersonaggio(p);
                 Serializza();

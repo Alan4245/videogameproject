@@ -11,7 +11,7 @@
         <Image Margin="316,128,317,130" Source="kisspng-mortal-kombat-vs-dc-universe-injustice-2-shao-kah-5b18f953490ca6.0824107615283633472992 (1).png" Stretch="Fill"/>
         <Image x:Name="Img_Personaggio1" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="159" Margin="67,78,0,0"/>
         <Image x:Name="Img_Personaggio2" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="159" Margin="568,78,0,0"/>
-        <ComboBox x:Name="ComboSfondo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="355" Margin="220,23,0,0" Height="28" SelectionChanged="ComboSfondo_SelectionChanged">
+        <ComboBox x:Name="ComboSfondo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="355" Margin="220,47,0,0" Height="28" SelectionChanged="ComboSfondo_SelectionChanged">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -27,7 +27,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <ComboBox x:Name="Combo_Arma_Personaggio1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="67,373,0,0">
+        <ComboBox x:Name="Combo_Arma_Personaggio1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="66,385,0,0">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -43,7 +43,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <ComboBox x:Name="Combo_Arma_Personaggio2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="568,373,0,0">
+        <ComboBox x:Name="Combo_Arma_Personaggio2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="159" Margin="571,388,0,0">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -53,6 +53,11 @@
         </ComboBox>
         <Button Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="231" Margin="288,331,0,0" Height="64" Background="#FFFFDC00" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="22" Click="Button_Click"/>
         <Button x:Name="btnExit" Content="TORNA AL MENU" HorizontalAlignment="Left" Height="40" Margin="15,15,0,0" VerticalAlignment="Top" Width="140" Click="btnExit_Click"/>
+        <Label x:Name="lblSfondo" Content="Seleziona uno sfondo" HorizontalAlignment="Left" Height="30" Margin="220,45,0,0" VerticalAlignment="Top" Width="125" Background="#00000000"/>
+        <Label x:Name="lblPersonaggio1" Content="Seleziona personaggio:" HorizontalAlignment="Left" Height="30" Margin="80,295,0,0" VerticalAlignment="Top" Width="130" Background="#00000000" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="lblPersonaggio2" Content="Seleziona personaggio:" HorizontalAlignment="Left" Height="30" Margin="580,295,0,0" VerticalAlignment="Top" Width="130" Background="#00000000" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="lblArma1" Content="Seleziona arma:" HorizontalAlignment="Left" Height="30" Margin="80,355,0,0" VerticalAlignment="Top" Width="130" Background="#00000000" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="lblArma2" Content="Seleziona arma:" HorizontalAlignment="Left" Height="30" Margin="585,355,0,0" VerticalAlignment="Top" Width="130" Background="#00000000" Foreground="White" FontWeight="Bold"/>
 
     </Grid>
 </Window>
