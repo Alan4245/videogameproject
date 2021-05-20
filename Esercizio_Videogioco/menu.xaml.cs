@@ -19,6 +19,7 @@ namespace Esercizio_Videogioco
     /// <summary>
     /// Logica di interazione per menu.xaml
     /// </summary>
+    /// Progetto terminato
     public partial class menu : Window
     {
         Videogioco videogiocolocale;
