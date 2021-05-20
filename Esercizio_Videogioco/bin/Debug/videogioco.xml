@@ -121,8 +121,8 @@
   </Razze>
   <Personaggi>
     <Nome>T-REX</Nome>
-    <Exp>295</Exp>
-    <Monete>40</Monete>
+    <Exp>415</Exp>
+    <Monete>80</Monete>
     <Armi>
       <Arma Nome="Mano">
         <Descrizione>È una mano.</Descrizione>
@@ -156,8 +156,8 @@
   </Personaggi>
   <Personaggi>
     <Nome>Rwondo</Nome>
-    <Exp>772</Exp>
-    <Monete>80</Monete>
+    <Exp>970</Exp>
+    <Monete>140</Monete>
     <Armi>
       <Arma Nome="Mano">
         <Descrizione>È una mano.</Descrizione>
@@ -191,9 +191,20 @@
   </Personaggi>
   <Personaggi>
     <Nome>Shrek</Nome>
-    <Exp>0</Exp>
-    <Monete>0</Monete>
-    <Armi />
+    <Exp>45</Exp>
+    <Monete>20</Monete>
+    <Armi>
+      <Arma Nome="Mano">
+        <Descrizione>È una mano.</Descrizione>
+        <ImgPath>imgarmi/ArmaMano.png</ImgPath>
+        <PuntiDanno>5</PuntiDanno>
+        <Categoria ID="C3">
+          <Nome>Leggere</Nome>
+        </Categoria>
+        <ExpRichiesta>0</ExpRichiesta>
+        <MoneteRichieste>0</MoneteRichieste>
+      </Arma>
+    </Armi>
     <Razza ID="H8">
       <CategorieArmi ID="A1">
         <Nome>Fuoco</Nome>

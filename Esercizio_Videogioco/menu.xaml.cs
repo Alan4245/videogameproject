@@ -34,6 +34,7 @@ namespace Esercizio_Videogioco
         {
             InitializeComponent();
             videogiocolocale = videogioco;
+            btnDebugging.Visibility = Visibility.Hidden; //rimuovere questa riga per abilitare il menu per il debugging.
         }
 
         public void Avviamento()

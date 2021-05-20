@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.IO;
 using System.Xml.Serialization;
 using System.Threading;
+using System.Media;
 
 namespace Esercizio_Videogioco
 {
@@ -41,6 +42,7 @@ namespace Esercizio_Videogioco
         private int margine1 = 32;
         private int margine2 = 611;
         Combattimentoclass classeCombattimento;
+        SoundPlayer splayer;
 
         public Combattimento(Personaggio p1, Personaggio p2, Arma arma1, Arma arma2, ImageSource imgSfondo, Videogioco videogioco)
         {
@@ -60,6 +62,7 @@ namespace Esercizio_Videogioco
             ImgPersonaggio2.Source = _img2;
             Sfondo.Source = imgSfondo;
             _videogiocolocale = videogioco;
+            splayer = new SoundPlayer(@"WAV\easteregg.wav");
 
             prog1 = new Thread(new ThreadStart(AbbassaBarra1));
             prog2 = new Thread(new ThreadStart(AbbassaBarra2));
@@ -206,12 +209,17 @@ namespace Esercizio_Videogioco
             Serializza();
             menu schermataMenu = new menu(_videogiocolocale);
             schermataMenu.Show();
+            splayer.Stop();
             this.Close();
         }
 
         private void btn_INIZIA_Click(object sender, RoutedEventArgs e)
         {
             btn_INIZIA.IsEnabled = false;
+            if(p11.Nome.ToLower() == "rwondo" || p22.Nome.ToLower() == "rwondo")
+            {
+                splayer.Play();
+            }
 
             classeCombattimento = new Combattimentoclass(ref p11, ref p22, arma11, arma22);
 
